@@ -1,0 +1,47 @@
+# beware, this iterates every system and probably a lot of planets, it's intended to be called once to set up modifiers on_game_start
+# if you want to apply the effects to a single planet and its moons, call the planet-specific effect instead of this one
+find_and_apply_extensive_moon_system_child_modifier = {
+    every_system = {
+		every_system_planet = {
+			limit = {
+				is_planet_class = pc_gas_giant
+				OR = {
+					has_planet_modifier = pm_extensive_moon_system
+					has_modifier = extensive_moon_system
+				}
+				has_moon = yes
+			}
+			apply_extensive_moon_system_child_modifier_planet = yes
+		}
+	}
+}
+
+# use this if you want to apply the effects to a single (scoped) planet and its moons
+apply_extensive_moon_system_child_modifier_planet = {
+    if = {
+		limit = {
+			is_scope_type = planet
+			OR = {
+				has_planet_modifier = pm_extensive_moon_system
+				has_modifier = extensive_moon_system
+			}
+		}
+		every_moon = {
+			if = {
+				limit = {
+					NOR = {
+						has_planet_modifier = pm_extensive_moon_system_moon
+						has_modifier = extensive_moon_system_moon
+					}
+				}
+				add_modifier = {
+					modifier = extensive_moon_system_moon
+					days = -1
+				}
+			}
+		}
+	}
+	else = {
+		log_error = "apply_extensive_moon_system_child_modifier_planet requires a planet scope which has an extensive moon system"
+	}
+}

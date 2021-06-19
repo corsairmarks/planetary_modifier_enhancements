@@ -1,0 +1,15 @@
+pm_extensive_moon_system_moon = {
+	spawn_chance = {
+		modifier = {
+			add = 100
+			exists = orbit
+			orbit = {
+				OR = {
+					has_planet_modifier = pm_extensive_moon_system
+					has_modifier = extensive_moon_system
+				}
+			}
+		}
+	}
+	modifier = extensive_moon_system_moon
+}

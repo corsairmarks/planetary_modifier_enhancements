@@ -1,0 +1,5 @@
+extensive_moon_system = {
+	station_gatherers_produces_mult = 0.10
+	icon = "gfx/interface/icons/planet_modifiers/pm_extensive_moon_system.dds"
+	icon_frame = 1
+}

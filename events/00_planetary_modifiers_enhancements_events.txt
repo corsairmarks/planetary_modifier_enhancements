@@ -1,0 +1,10 @@
+namespace = planetary_modifier_enhancements
+
+event = {
+	id = planetary_modifier_enhancements.1
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		find_and_apply_extensive_moon_system_child_modifier = yes
+	}
+}
