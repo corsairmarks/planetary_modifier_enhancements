@@ -1,4 +1,4 @@
-name="Planetary Modifiers Enhancements"
+name="Planetary Modifier Enhancements"
 tags={
 	"Fixes"
 	"Gameplay"
