@@ -4,6 +4,7 @@ I wanted to tweak a few modifiers related to planetary bonuses to more flavorful
 
 1. The C.A.R.E Interactive Interface is an economic optimization engine, so I wanted it to give a bonus to trade value
 2. The Extensive Moon System modifier adds mining districts and output... to gas giants which can't be colonized, so I changed it to give a bonus to mining stations (but not research stations) that also applies to any unhabitable moons, and moved the bonus mineral jobs production and mining districts onto any/all habitable moons
+3. The Resource Consolidation origin goes through all the trouble of shrinking gas giants and converting them to molten worlds tagged with "Chthonian Planet" but then a game start clears all modifiers, so I wanted to stop blanket deleting planetary modifiers in starting systems
 
 # Compatibility
 
@@ -18,7 +19,7 @@ This mod is not compatible with achievements because it overwrites data from cor
 
 ### Post-Game Start
 
-This mod can be safely added to your save after the game has started, but not removed.  If this mod is not active at game start, you will miss out of the Extensive Moon System (Moon) modifier being applied to the moods of gas giants with Extensive Moon System.
+This mod can be safely added to your save after the game has started, but not removed.  If this mod is not active at game start, you will miss out of the Extensive Moon System (Moon) modifier being applied to the moods of gas giants with Extensive Moon System.  Removing this mod will result in unknown planetary modifiers - which Stellaris may or may not handle gracefully.
 
 ## Known Issues
 
