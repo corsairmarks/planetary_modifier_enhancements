@@ -1,6 +1,14 @@
+# fires when the game starts
 on_game_start = {
 	events = {
 		planetary_modifier_enhancements.13
 		planetary_modifier_enhancements.1
+	}
+}
+
+# no scope, like on_game_start
+on_monthly_pulse = {
+	events = {
+		planetary_modifier_enhancements.13 # flag mod as installed, just in case this mod was added after game start
 	}
 }

@@ -14,6 +14,7 @@ event = {
 	}
 }
 
+# triggered by on_game_start
 event = {
 	id = planetary_modifier_enhancements.1
 	hide_window = yes
