@@ -1,5 +1,6 @@
 on_game_start = {
 	events = {
+		planetary_modifier_enhancements.13
 		planetary_modifier_enhancements.1
 	}
 }

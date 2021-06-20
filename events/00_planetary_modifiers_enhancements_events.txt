@@ -1,5 +1,19 @@
 namespace = planetary_modifier_enhancements
 
+# flag mod as active
+event = {
+	id = planetary_modifier_enhancements.13
+	hide_window = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		NOT = { has_global_flag = planetary_modifier_enhancements_installed }
+	}
+	immediate = {
+		set_global_flag = planetary_modifier_enhancements_installed
+	}
+}
+
 event = {
 	id = planetary_modifier_enhancements.1
 	hide_window = yes

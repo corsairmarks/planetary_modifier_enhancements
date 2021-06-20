@@ -16,6 +16,10 @@ This mod also overrides a game setup event `game_setup.2`. I find it unlikely ot
 
 This mod is not compatible with achievements because it overwrites data from core Stellaris files.
 
+### Post-Game Start
+
+This mod can be safely added to your save after the game has started, but not removed.  If this mod is not active at game start, you will miss out of the Extensive Moon System (Moon) modifier being applied to the moods of gas giants with Extensive Moon System.
+
 ## Known Issues
 
 Overriding an event causes the game to log an error, so expect to see one line in the error.log file similar to:
@@ -32,3 +36,8 @@ Overriding an event causes the game to log an error, so expect to see one line i
 * 2.0.2 Fix the **other** renamed trigger usage
 * 2.0.3 Add preview images
 * 2.1.0 Add overridden `game_start.2` event to avoid clearing planetary modifiers in starting systems (now limited to only homeworlds as described in code comments), add tag "Galaxy Generation"
+* 2.2.0 Add event to set flag to mark as installed
+
+## Source Code
+
+[Hosted on GitHub](https://github.com/corsairmarks/planetary_modifier_enhancements)

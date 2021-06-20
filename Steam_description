@@ -1,0 +1,45 @@
+[h1]Overview[/h1]
+
+I wanted to tweak a few modifiers related to planetary bonuses to more flavorful bonuses.
+
+[olist]
+[*]The C.A.R.E Interactive Interface is an economic optimization engine, so I wanted it to give a bonus to trade value
+[*]The Extensive Moon System modifier adds mining districts and output... to gas giants which can't be colonized, so I changed it to give a bonus to mining stations (but not research stations) that also applies to any unhabitable moons, and moved the bonus mineral jobs production and mining districts onto any/all habitable moons
+[/olist]
+
+[h1]Compatibility[/h1]
+
+This mod should be widely compatible with other mods.  Incompatibilities would likely occur if other mods also overwrite or add same the planetary or static modifier IDs.  If another mod is attempting to specify the same modifiers: first in wins for static modifiers, but last in wins for planetary modifiers.  For now, only these [i]static_modifiers[/i] are overridden (and no [i]planet_modifiers[/i]):
+
+This mod also overrides a game setup event [i]game_setup.2[/i].  I find it unlikely other mods would be changing this event (it clears planetary modifiers for home systems); in any case first in wins for events.
+
+[list]
+[*][i]extensive_moon_system[/i]
+[*][i]pm_planetary_mechanocalibrator[/i] (there is also a [i]planet_modifier[/i] with the same key but it is unchanged)
+[/list]
+
+This mod is not compatible with achievements because it overwrites data from core Stellaris files.
+
+[h3]Post-Game Start[/h3]
+
+This mod can be safely added to your save after the game has started, but not removed.  If this mod is not active at game start, you will miss out of the Extensive Moon System (Moon) modifier being applied to the moods of gas giants with Extensive Moon System.
+
+[h2]Known Issues[/h2]
+
+Overriding an event causes the game to log an error, so expect to see one line in the error.log file similar to:
+
+[code]
+[20:11:11][eventmanager.cpp:355]: an event with id [game_start.2] already exists!  file: events/game_start.txt line: 213
+[/code]
+
+[h2]Changelog[/h2]
+
+[list]
+[*]1.0.0 Initial version
+[*]2.0.0 Reverted to a single modifier for [i]extensive_moon_system_moon[/i] that adds the bonus for habitable and unhabitable moons
+[*]2.0.1 Fix renamed trigger usage
+[*]2.0.2 Fix the [b]other[/b] renamed trigger usage
+[*]2.0.3 Add preview images
+[*]2.1.0 Add overridden `game_start.2` event to avoid clearing planetary modifiers in starting systems (now limited to only homeworlds as described in code comments), add tag "Galaxy Generation"
+[*]2.2.0 Add event to set flag to mark as installed
+[/list]
