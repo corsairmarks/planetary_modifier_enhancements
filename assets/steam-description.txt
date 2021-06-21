@@ -5,7 +5,7 @@ I wanted to tweak a few modifiers related to planetary bonuses to more flavorful
 [olist]
 [*]The C.A.R.E Interactive Interface is an economic optimization engine, so I wanted it to give a bonus to trade value
 [*]The Extensive Moon System modifier adds mining districts and output... to gas giants which can't be colonized, so I changed it to give a bonus to mining stations (but not research stations) that also applies to any unhabitable moons, and moved the bonus mineral jobs production and mining districts onto any/all habitable moons
-[*]The Resource Consolidation origin goes through all the trouble of shrinking gas giants and converting them to molten worlds tagged with "Chthonian Planet" but then a game start clears all modifiers, so I wanted to stop blanket deleting planetary modifiers in starting systems
+[*]The Resource Consolidation origin goes through all the trouble of shrinking gas giants and converting them to molten worlds tagged with the "Chthonian Planet" modifier but then a game start event clears all modifiers, so I wanted to stop blanket deleting planetary modifiers in starting systems
 [/olist]
 
 [h1]Compatibility[/h1]
