@@ -38,7 +38,12 @@ Overriding an event causes the game to log an error, so expect to see one line i
 * 2.0.3 Add preview images
 * 2.1.0 Add overridden `game_start.2` event to avoid clearing planetary modifiers in starting systems (now limited to only homeworlds as described in code comments), add tag "Galaxy Generation"
 * 2.2.0 Add event to set flag to mark as installed
+* 2.2.1 Remove extra images files to keep distribution lightweight (no script changes)
 
 ## Source Code
 
 [Hosted on GitHub](https://github.com/corsairmarks/planetary_modifier_enhancements)
+
+### Development Notes
+
+It is best to clone this repository in a directory _other_ than `<Stellaris User's Directory>/Paradox Interactive/Stellaris/mod`, and then make a connection to the `mod` folder in this repository via a `*.mod` file's `path` property.  Also note that the README.md file exists in the `mod` directory but is symbolically linked in the root directory.

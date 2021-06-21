@@ -43,6 +43,7 @@ Overriding an event causes the game to log an error, so expect to see one line i
 [*]2.0.3 Add preview images
 [*]2.1.0 Add overridden `game_start.2` event to avoid clearing planetary modifiers in starting systems (now limited to only homeworlds as described in code comments), add tag "Galaxy Generation"
 [*]2.2.0 Add event to set flag to mark as installed
+[*]2.2.1 Remove extra images files to keep distribution lightweight (no script changes)
 [/list]
 
 [h2]Source Code[/h2]
