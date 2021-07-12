@@ -39,10 +39,11 @@ Overriding an event causes the game to log an error, so expect to see one line i
 * 2.1.0 Add overridden `game_start.2` event to avoid clearing planetary modifiers in starting systems (now limited to only homeworlds as described in code comments), add tag "Galaxy Generation"
 * 2.2.0 Add event to set flag to mark as installed
 * 2.2.1 Remove extra images files to keep distribution lightweight (no script changes)
+* 2.3.0 Remove monthy pulse event, instead fire when a single-player game is loaded
 
 ## Source Code
 
-[Hosted on GitHub](https://github.com/corsairmarks/planetary_modifier_enhancements)
+Hosted on [GitHub](https://github.com/corsairmarks/planetary_modifier_enhancements)
 
 ### Development Notes
 

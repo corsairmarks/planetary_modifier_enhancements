@@ -6,9 +6,9 @@ on_game_start = {
 	}
 }
 
-# no scope, like on_game_start
-on_monthly_pulse = {
+# fired when loading a single-player game
+on_single_player_save_game_load = {
 	events = {
-		planetary_modifier_enhancements.13 # flag mod as installed, just in case this mod was added after game start
+		planetary_modifier_enhancements.13 # flag mod as installed
 	}
 }

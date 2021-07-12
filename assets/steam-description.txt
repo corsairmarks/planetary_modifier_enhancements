@@ -35,17 +35,8 @@ Overriding an event causes the game to log an error, so expect to see one line i
 
 [h2]Changelog[/h2]
 
-[list]
-[*]1.0.0 Initial version
-[*]2.0.0 Reverted to a single modifier for [i]extensive_moon_system_moon[/i] that adds the bonus for habitable and unhabitable moons
-[*]2.0.1 Fix renamed trigger usage
-[*]2.0.2 Fix the [b]other[/b] renamed trigger usage
-[*]2.0.3 Add preview images
-[*]2.1.0 Add overridden `game_start.2` event to avoid clearing planetary modifiers in starting systems (now limited to only homeworlds as described in code comments), add tag "Galaxy Generation"
-[*]2.2.0 Add event to set flag to mark as installed
-[*]2.2.1 Remove extra images files to keep distribution lightweight (no script changes)
-[/list]
+See the [url=https://steamcommunity.com/sharedfiles/filedetails/changelog/2496357128]Change Notes[/url]
 
 [h2]Source Code[/h2]
 
-[url=https://github.com/corsairmarks/planetary_modifier_enhancements]Hosted on GitHub[/url]
+Hosted on [url=https://github.com/corsairmarks/planetary_modifier_enhancements]GitHub[/url]
