@@ -40,3 +40,5 @@ See the [url=https://steamcommunity.com/sharedfiles/filedetails/changelog/249635
 [h2]Source Code[/h2]
 
 Hosted on [url=https://github.com/corsairmarks/planetary_modifier_enhancements]GitHub[/url]
+
+[url=https://discord.gg/bHVez2C][img]https://i.imgur.com/4Und3QN.png[/img][/url]
