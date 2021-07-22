@@ -34,10 +34,7 @@ apply_extensive_moon_system_child_modifier_planet = {
 						has_modifier = extensive_moon_system_moon
 					}
 				}
-				add_modifier = {
-					modifier = extensive_moon_system_moon
-					days = -1
-				}
+				add_modifier = { modifier = extensive_moon_system_moon }
 			}
 		}
 	}
