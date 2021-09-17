@@ -15,9 +15,9 @@ This mod should be widely compatible with other mods.  Incompatibilities would l
 
 This mod also overrides a game setup event `game_setup.2`. I find it unlikely other mods would be changing this event (it clears planetary modifiers for home systems); in any case first in wins for events.
 
-This mod is not compatible with achievements because it overwrites data from core Stellaris files.
+Built for Stellaris version 3.1.* "Lem."  Not compatible with achievements.
 
-### Post-Game Start
+### When to Install
 
 This mod can be safely added to your save after the game has started, but not removed.  If this mod is not active at game start, you will miss out of the Extensive Moon System (Moon) modifier being applied to the moods of gas giants with Extensive Moon System.  Removing this mod will result in unknown planetary modifiers - which Stellaris may or may not handle gracefully.
 
@@ -40,6 +40,7 @@ Overriding an event causes the game to log an error, so expect to see one line i
 * 2.2.0 Add event to set flag to mark as installed
 * 2.2.1 Remove extra images files to keep distribution lightweight (no script changes)
 * 2.3.0 Remove monthy pulse event, instead fire when a single-player game is loaded
+* 2.4.0 Marked compatible with Stellaris version 3.1.* "Lem" - no actual changes
 
 ## Source Code
 
