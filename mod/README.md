@@ -45,6 +45,7 @@ Overriding an event causes the game to log an error, so expect to see one line i
     * Overwrite most built-in planetary modifiers to allow multiple modifiers to spawn on a single planet (many modifiers were already coded to have increased or decreased spawn chances in the presence of other modifiers - so disabling them for planets with >1 modifier made no sense)
     * Overwrite many static modifiers related to planetary modifiers that affect planetary natural resources - instead of minerals-only output, these modifiers affect all "planet_miners" category jobs _and_ affect gatherer stations (aka mining stations) in orbit of the planet - e.g. Carbon World can only spawn on barren planets (which are unhabitable)
     * Moons of moons in Extensive Moon Systems now also have the Extensive Moon System Moon planetary modifier added
+    * At game start, ensure unhabitable planets with a plentiful minerals modifier(s) have a minerals deposit if they doesn't already have an orbital deposit
 
 ## Source Code
 

@@ -20,5 +20,6 @@ event = {
 	is_triggered_only = yes
 	immediate = {
 		find_and_apply_extensive_moon_system_child_modifier = yes
+		find_and_add_minerals_to_mineral_plentiful_unhabitable_planets = yes
 	}
 }
