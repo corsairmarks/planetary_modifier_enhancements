@@ -14,6 +14,7 @@ I wanted to tweak several planetary modifiers to provide more flavorful and usef
 
 This mod should be fairly compatible with other mods.  Incompatibilities would likely occur if other mods also overwrite or add same the planetary or static modifier IDs.  If another mod is attempting to specify the same modifiers: first in wins for static modifiers, but last in wins for planetary modifiers.  These eight [b]static_modifiers[/b] are overridden:
 
+[list]
 [*]asteroid_impacts
 [*]extensive_moon_system
 [*]carbon_world
@@ -22,9 +23,11 @@ This mod should be fairly compatible with other mods.  Incompatibilities would l
 [*]ultra_rich
 [*]mineral_poor
 [*]pm_planetary_mechanocalibrator (there is also a [b]planet_modifiers[/b] entry with the same key but it is unchanged)
+[/list]
 
 And these twenty-three [b]planet_modifiers[/b] are overridden:
 
+[list]
 [*]pm_hazardous_weather
 [*]pm_dangerous_wildlife
 [*]pm_weak_magnetic_field
@@ -48,6 +51,7 @@ And these twenty-three [b]planet_modifiers[/b] are overridden:
 [*]pm_atmospheric_hallucinogen
 [*]pm_lush
 [*]pm_bleak
+[/list]
 
 This mod also overrides a game setup event [b]game_setup.2[/b]. I find it unlikely other mods would be changing this event (it clears planetary modifiers for home systems); in any case first in wins for events.
 
