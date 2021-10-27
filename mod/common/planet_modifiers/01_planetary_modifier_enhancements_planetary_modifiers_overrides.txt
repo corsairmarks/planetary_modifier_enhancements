@@ -1,24 +1,5 @@
 ### Planet Modifiers
 
-pm_null = {
-	is_null = yes
-	spawn_chance = {
-		value = 275
-		modifier = {
-			factor = 3
-			num_modifiers > 2
-		}
-		modifier = {
-			factor = 3
-			num_modifiers > 1
-		}
-		modifier = {
-			factor = 3
-			num_modifiers > 0
-		}
-	}
-}
-
 # allow multiple modifiers, disallow gaia (was add = 0 instead of factor)
 pm_hazardous_weather = {
 	spawn_chance = {
