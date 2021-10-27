@@ -10,42 +10,28 @@ find_and_apply_extensive_moon_system_child_modifier = {
 				has_modifier = extensive_moon_system
 			}
 		}
-		apply_extensive_moon_system_child_modifier_planet = yes
+		planet_event = {
+			id = planetary_modifier_enhancements.2
+		}
 	}
 }
 
 # use this if you want to apply Extensive Moon System Moon to a single planet's moons
 # this = planet
 apply_extensive_moon_system_child_modifier_planet = {
-    if = {
+	every_moon = {
 		limit = {
-			is_scope_type = planet
-			has_moon = yes
-			OR = {
-				has_planet_modifier = pm_extensive_moon_system
-				has_modifier = extensive_moon_system
+			NOR = {
+				has_planet_modifier = pm_extensive_moon_system_moon
+				has_modifier = extensive_moon_system_moon
 				has_planet_modifier = pm_extensive_moon_system_moon
 				has_modifier = extensive_moon_system_moon
 			}
 		}
-		every_moon = {
-			limit = {
-				NOR = {
-					has_planet_modifier = pm_extensive_moon_system_moon
-					has_modifier = extensive_moon_system_moon
-					has_planet_modifier = pm_extensive_moon_system_moon
-					has_modifier = extensive_moon_system_moon
-				}
-			}
-			add_modifier = { modifier = extensive_moon_system_moon }
-			if = {
-				limit = { has_moon = yes }
-				apply_extensive_moon_system_child_modifier_planet = yes
-			}
+		add_modifier = { modifier = extensive_moon_system_moon }
+		planet_event = {
+			id = planetary_modifier_enhancements.2
 		}
-	}
-	else = {
-		log_error = "apply_extensive_moon_system_child_modifier_planet requires a planet scope which has an extensive moon system"
 	}
 }
 
