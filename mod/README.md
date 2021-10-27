@@ -1,32 +1,89 @@
 # Overview
 
-I wanted to tweak a few modifiers related to planetary bonuses to more flavorful bonuses.
+I wanted to tweak several planetary modifiers to provide more flavorful and useful bonuses.
 
 1. The C.A.R.E Interactive Interface is an economic optimization engine, so I wanted it to give a bonus to trade value
 2. The Extensive Moon System modifier adds mining districts and output... to gas giants which can't be colonized, so I changed it to give a bonus to mining stations (but not research stations) that also applies to any unhabitable moons, and moved the bonus mineral jobs production and mining districts onto any/all habitable moons
 3. The Resource Consolidation origin goes through all the trouble of shrinking gas giants and converting them to molten worlds tagged with the "Chthonian Planet" modifier but then a game start event clears all modifiers, so I wanted to stop blanket deleting planetary modifiers in starting systems
+4. Allow multiple planetary modifiers to spawn on any given planet, as suggested by the majority of the planetary modifier spawn code (which weights some higher or lower in the presence of other planetary modifiers)
+5. Convert all the "mineral richness" related modifiers to provide bonuses to the miner job category (rather than only minerals production) and mining station output, similar to the changes for \#2
 
 # Compatibility
 
-This mod should be widely compatible with other mods.  Incompatibilities would likely occur if other mods also overwrite or add same the planetary or static modifier IDs.  If another mod is attempting to specify the same modifiers: first in wins for static modifiers, but last in wins for planetary modifiers.  For now, only these `static_modifiers` are overridden (and no `planet_modifiers`):
+This mod should be fairly compatible with other mods.  Incompatibilities would likely occur if other mods also overwrite or add same the planetary or static modifier IDs.  If another mod is attempting to specify the same modifiers: first in wins for static modifiers, but last in wins for planetary modifiers.  These eight `static_modifiers` are overridden:
 
+* `asteroid_impacts`
 * `extensive_moon_system`
-* `pm_planetary_mechanocalibrator` (there is also a `planet_modifier` with the same key but it is unchanged)
+* `carbon_world`
+* `asteroid_belt`
+* `mineral_rich`
+* `ultra_rich`
+* `mineral_poor`
+* `pm_planetary_mechanocalibrator` (there is also a `planet_modifiers` entry with the same key but it is unchanged)
+
+And these twenty-three `planet_modifiers` are overridden:
+
+* `pm_hazardous_weather`
+* `pm_dangerous_wildlife`
+* `pm_weak_magnetic_field`
+* `pm_strong_magnetic_field`
+* `pm_unstable_tectonics`
+* `pm_tidal_locked`
+* `pm_chthonian_planet`
+* `pm_asteroid_impacts`
+* `pm_extensive_moon_system`
+* `pm_carbon_world`
+* `pm_wild_storms`
+* `pm_low_gravity`
+* `pm_high_gravity`
+* `pm_mineral_rich`
+* `pm_ultra_rich`
+* `pm_mineral_poor`
+* `pm_titanic_life`
+* `pm_asteroid_belt`
+* `pm_natural_beauty`
+* `pm_atmospheric_aphrodisiac`
+* `pm_atmospheric_hallucinogen`
+* `pm_lush`
+* `pm_bleak`
 
 This mod also overrides a game setup event `game_setup.2`. I find it unlikely other mods would be changing this event (it clears planetary modifiers for home systems); in any case first in wins for events.
 
-Built for Stellaris version 3.1.* "Lem."  Not compatible with achievements.
+Built for Stellaris version 3.1.\* "Lem."  Not compatible with achievements.
 
 ### When to Install
 
-This mod can be safely added to your save after the game has started, but not removed.  If this mod is not active at game start, you will miss out of the Extensive Moon System (Moon) modifier being applied to the moods of gas giants with Extensive Moon System.  Removing this mod will result in unknown planetary modifiers - which Stellaris may or may not handle gracefully.
+This mod can be safely added to your save after the game has started, but not removed.  If this mod is not active at game start, you will miss out of the Extensive Moon System (Moon) modifier being applied to the moons of gas giants with Extensive Moon System and minerals being added to some planets with modifiers but no deposits.  Removing this mod will result in unknown planetary modifiers - which Stellaris may or may not handle gracefully.
 
 ## Known Issues
 
-Overriding an event causes the game to log an error, so expect to see one line in the error.log file similar to:
+Overriding static modifiers and preempting events cause the game to log errors, so expect to see twenty-four (!) lines in the error.log file similar to:
 
 ```
-[20:11:11][eventmanager.cpp:355]: an event with id [game_start.2] already exists!  file: events/game_start.txt line: 213
+[22:34:20][game_singleobjectdatabase.h:147]: Object with key: pm_hazardous_weather already exists
+[22:34:20][game_singleobjectdatabase.h:147]: Object with key: pm_dangerous_wildlife already exists
+[22:34:20][game_singleobjectdatabase.h:147]: Object with key: pm_weak_magnetic_field already exists
+[22:34:20][game_singleobjectdatabase.h:147]: Object with key: pm_strong_magnetic_field already exists
+[22:34:20][game_singleobjectdatabase.h:147]: Object with key: pm_unstable_tectonics already exists
+[22:34:20][game_singleobjectdatabase.h:147]: Object with key: pm_tidal_locked already exists
+[22:34:20][game_singleobjectdatabase.h:147]: Object with key: pm_chthonian_planet already exists
+[22:34:20][game_singleobjectdatabase.h:147]: Object with key: pm_asteroid_impacts already exists
+[22:34:20][game_singleobjectdatabase.h:147]: Object with key: pm_extensive_moon_system already exists
+[22:34:20][game_singleobjectdatabase.h:147]: Object with key: pm_carbon_world already exists
+[22:34:20][game_singleobjectdatabase.h:147]: Object with key: pm_wild_storms already exists
+[22:34:20][game_singleobjectdatabase.h:147]: Object with key: pm_low_gravity already exists
+[22:34:20][game_singleobjectdatabase.h:147]: Object with key: pm_high_gravity already exists
+[22:34:20][game_singleobjectdatabase.h:147]: Object with key: pm_mineral_rich already exists
+[22:34:20][game_singleobjectdatabase.h:147]: Object with key: pm_ultra_rich already exists
+[22:34:20][game_singleobjectdatabase.h:147]: Object with key: pm_mineral_poor already exists
+[22:34:20][game_singleobjectdatabase.h:147]: Object with key: pm_titanic_life already exists
+[22:34:20][game_singleobjectdatabase.h:147]: Object with key: pm_asteroid_belt already exists
+[22:34:20][game_singleobjectdatabase.h:147]: Object with key: pm_natural_beauty already exists
+[22:34:20][game_singleobjectdatabase.h:147]: Object with key: pm_atmospheric_aphrodisiac already exists
+[22:34:20][game_singleobjectdatabase.h:147]: Object with key: pm_atmospheric_hallucinogen already exists
+[22:34:20][game_singleobjectdatabase.h:147]: Object with key: pm_lush already exists
+[22:34:20][game_singleobjectdatabase.h:147]: Object with key: pm_bleak already exists
+[22:34:22][eventmanager.cpp:355]: an event with id [game_start.2] already exists!  file: events/game_start.txt line: 213
 ```
 
 ## Changelog
@@ -39,7 +96,7 @@ Overriding an event causes the game to log an error, so expect to see one line i
 * 2.1.0 Add overridden `game_start.2` event to avoid clearing planetary modifiers in starting systems (now limited to only homeworlds as described in code comments), add tag "Galaxy Generation"
 * 2.2.0 Add event to set flag to mark as installed
 * 2.2.1 Remove extra images files to keep distribution lightweight (no script changes)
-* 2.3.0 Remove monthy pulse event, instead fire when a single-player game is loaded
+* 2.3.0 Remove monthly pulse event, instead fire when a single-player game is loaded
 * 2.4.0 Marked compatible with Stellaris version 3.1.* "Lem" - no actual changes
 * 2.5.0 Allow multiple modifiers to spawn per planet, adjust mineral-based static modifiers to affect miner-category output and also mining stations
     * Overwrite most built-in planetary modifiers to allow multiple modifiers to spawn on a single planet (many modifiers were already coded to have increased or decreased spawn chances in the presence of other modifiers - so disabling them for planets with >1 modifier made no sense)
