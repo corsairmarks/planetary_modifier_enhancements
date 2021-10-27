@@ -48,11 +48,13 @@ find_and_add_minerals_to_mineral_plentiful_unhabitable_planets = {
 			OR = {
 				has_planet_modifier = pm_ultra_rich
 				has_planet_modifier = pm_mineral_rich
+				has_planet_modifier = pm_mineral_poor
 				has_planet_modifier = pm_carbon_world
 				has_planet_modifier = pm_asteroid_belt
 				has_planet_modifier = pm_asteroid_impacts
 				has_modifier = ultra_rich
 				has_modifier = mineral_rich
+				has_modifier = mineral_poor
 				has_modifier = carbon_world
 				has_modifier = asteroid_belt
 				has_modifier = asteroid_impacts
@@ -70,7 +72,9 @@ find_and_add_minerals_to_mineral_plentiful_unhabitable_planets = {
 		else_if = {
 			limit = {
 				OR = {
+					has_planet_modifier = pm_mineral_poor
 					has_planet_modifier = pm_asteroid_impacts
+					has_modifier = mineral_poor
 					has_modifier = asteroid_impacts
 				}
 			}
