@@ -6,15 +6,9 @@ pm_hazardous_weather = {
 		modifier = {
 			add = 10
 			OR = {
-				is_planet_class = "pc_desert"
-				is_planet_class = "pc_tropical"
-				is_planet_class = "pc_arid"
-				is_planet_class = "pc_continental"
-				is_planet_class = "pc_ocean"
-				is_planet_class = "pc_tundra"
-				is_planet_class = "pc_arctic"
-				is_planet_class = "pc_alpine"
-				is_planet_class = "pc_savannah"
+				is_dry = yes
+				is_wet = yes
+				is_cold = yes
 				is_planet_class = "pc_relic"
 			}
 		}
@@ -36,15 +30,9 @@ pm_dangerous_wildlife = {
 		modifier = {
 			add = 10
 			OR = {
-				is_planet_class = "pc_desert"
-				is_planet_class = "pc_tropical"
-				is_planet_class = "pc_arid"
-				is_planet_class = "pc_continental"
-				is_planet_class = "pc_ocean"
-				is_planet_class = "pc_tundra"
-				is_planet_class = "pc_arctic"
-				is_planet_class = "pc_alpine"
-				is_planet_class = "pc_savannah"
+				is_dry = yes
+				is_wet = yes
+				is_cold = yes
 			}
 		}
 		modifier = {
@@ -73,15 +61,9 @@ pm_weak_magnetic_field = {
 		modifier = {
 			add = 10
 			OR = {
-				is_planet_class = "pc_desert"
-				is_planet_class = "pc_tropical"
-				is_planet_class = "pc_arid"
-				is_planet_class = "pc_continental"
-				is_planet_class = "pc_ocean"
-				is_planet_class = "pc_tundra"
-				is_planet_class = "pc_arctic"
-				is_planet_class = "pc_alpine"
-				is_planet_class = "pc_savannah"
+				is_dry = yes
+				is_wet = yes
+				is_cold = yes
 				is_planet_class = "pc_relic"
 			}
 		}
@@ -108,15 +90,9 @@ pm_strong_magnetic_field = {
 		modifier = {
 			add = 10
 			OR = {
-				is_planet_class = "pc_desert"
-				is_planet_class = "pc_tropical"
-				is_planet_class = "pc_arid"
-				is_planet_class = "pc_continental"
-				is_planet_class = "pc_ocean"
-				is_planet_class = "pc_tundra"
-				is_planet_class = "pc_arctic"
-				is_planet_class = "pc_alpine"
-				is_planet_class = "pc_savannah"
+				is_dry = yes
+				is_wet = yes
+				is_cold = yes
 				is_planet_class = "pc_relic"
 			}
 		}
@@ -143,15 +119,9 @@ pm_unstable_tectonics = {
 		modifier = {
 			add = 10
 			OR = {
-				is_planet_class = "pc_desert"
-				is_planet_class = "pc_tropical"
-				is_planet_class = "pc_arid"
-				is_planet_class = "pc_continental"
-				is_planet_class = "pc_ocean"
-				is_planet_class = "pc_tundra"
-				is_planet_class = "pc_arctic"
-				is_planet_class = "pc_alpine"
-				is_planet_class = "pc_savannah"
+				is_dry = yes
+				is_wet = yes
+				is_cold = yes
 			}
 		}
 		modifier = {
@@ -177,15 +147,9 @@ pm_tidal_locked = {
 		modifier = {
 			add = 1
 			OR = {
-				is_planet_class = "pc_desert"
-				is_planet_class = "pc_tropical"
-				is_planet_class = "pc_arid"
-				is_planet_class = "pc_continental"
-				is_planet_class = "pc_ocean"
-				is_planet_class = "pc_tundra"
-				is_planet_class = "pc_arctic"
-				is_planet_class = "pc_alpine"
-				is_planet_class = "pc_savannah"
+				is_dry = yes
+				is_wet = yes
+				is_cold = yes
 				is_planet_class = "pc_relic"
 			}
 		}
@@ -230,15 +194,9 @@ pm_asteroid_impacts = {
 		modifier = {
 			add = 10
 			OR = {
-				is_planet_class = "pc_desert"
-				is_planet_class = "pc_tropical"
-				is_planet_class = "pc_arid"
-				is_planet_class = "pc_continental"
-				is_planet_class = "pc_ocean"
-				is_planet_class = "pc_tundra"
-				is_planet_class = "pc_arctic"
-				is_planet_class = "pc_alpine"
-				is_planet_class = "pc_savannah"
+				is_dry = yes
+				is_wet = yes
+				is_cold = yes
 			}
 		}
 		modifier = {
@@ -321,15 +279,9 @@ pm_wild_storms = {
 		modifier = {
 			add = 10
 			OR = {
-				is_planet_class = "pc_desert"
-				is_planet_class = "pc_tropical"
-				is_planet_class = "pc_arid"
-				is_planet_class = "pc_continental"
-				is_planet_class = "pc_ocean"
-				is_planet_class = "pc_tundra"
-				is_planet_class = "pc_arctic"
-				is_planet_class = "pc_alpine"
-				is_planet_class = "pc_savannah"
+				is_dry = yes
+				is_wet = yes
+				is_cold = yes
 				is_planet_class = "pc_relic"
 			}
 		}
@@ -351,15 +303,9 @@ pm_low_gravity = {
 		modifier = {
 			add = 10
 			OR = {
-				is_planet_class = "pc_desert"
-				is_planet_class = "pc_tropical"
-				is_planet_class = "pc_arid"
-				is_planet_class = "pc_continental"
-				is_planet_class = "pc_ocean"
-				is_planet_class = "pc_tundra"
-				is_planet_class = "pc_arctic"
-				is_planet_class = "pc_alpine"
-				is_planet_class = "pc_savannah"
+				is_dry = yes
+				is_wet = yes
+				is_cold = yes
 				is_planet_class = "pc_relic"
 			}
 		}
@@ -367,13 +313,9 @@ pm_low_gravity = {
 			factor = 2
 			planet_size < 14
 			OR = {
-				is_planet_class = "pc_desert"
-				is_planet_class = "pc_tropical"
-				is_planet_class = "pc_continental"
-				is_planet_class = "pc_ocean"
-				is_planet_class = "pc_arctic"
-				is_planet_class = "pc_tundra"
-				is_planet_class = "pc_arid"
+				is_dry = yes
+				is_wet = yes
+				is_cold = yes
 				is_planet_class = "pc_relic"
 			}
 		}
@@ -381,13 +323,9 @@ pm_low_gravity = {
 			factor = 2
 			planet_size < 12
 			OR = {
-				is_planet_class = "pc_desert"
-				is_planet_class = "pc_tropical"
-				is_planet_class = "pc_continental"
-				is_planet_class = "pc_ocean"
-				is_planet_class = "pc_arctic"
-				is_planet_class = "pc_tundra"
-				is_planet_class = "pc_arid"
+				is_dry = yes
+				is_wet = yes
+				is_cold = yes
 				is_planet_class = "pc_relic"
 			}
 		}
@@ -395,13 +333,9 @@ pm_low_gravity = {
 			factor = 2
 			planet_size < 7
 			OR = {
-				is_planet_class = "pc_desert"
-				is_planet_class = "pc_tropical"
-				is_planet_class = "pc_continental"
-				is_planet_class = "pc_ocean"
-				is_planet_class = "pc_arctic"
-				is_planet_class = "pc_tundra"
-				is_planet_class = "pc_arid"
+				is_dry = yes
+				is_wet = yes
+				is_cold = yes
 				is_planet_class = "pc_relic"
 			}
 		}
@@ -409,13 +343,9 @@ pm_low_gravity = {
 			factor = 0.5
 			planet_size > 19
 			OR = {
-				is_planet_class = "pc_desert"
-				is_planet_class = "pc_tropical"
-				is_planet_class = "pc_continental"
-				is_planet_class = "pc_ocean"
-				is_planet_class = "pc_arctic"
-				is_planet_class = "pc_tundra"
-				is_planet_class = "pc_arid"
+				is_dry = yes
+				is_wet = yes
+				is_cold = yes
 				is_planet_class = "pc_relic"
 			}
 		}
@@ -438,15 +368,9 @@ pm_high_gravity = {
 		modifier = {
 			add = 10
 			OR = {
-				is_planet_class = "pc_desert"
-				is_planet_class = "pc_tropical"
-				is_planet_class = "pc_arid"
-				is_planet_class = "pc_continental"
-				is_planet_class = "pc_ocean"
-				is_planet_class = "pc_tundra"
-				is_planet_class = "pc_arctic"
-				is_planet_class = "pc_alpine"
-				is_planet_class = "pc_savannah"
+				is_dry = yes
+				is_wet = yes
+				is_cold = yes
 				is_planet_class = "pc_relic"
 			}
 		}
@@ -454,13 +378,9 @@ pm_high_gravity = {
 			factor = 2
 			planet_size > 19
 			OR = {
-				is_planet_class = "pc_desert"
-				is_planet_class = "pc_tropical"
-				is_planet_class = "pc_continental"
-				is_planet_class = "pc_ocean"
-				is_planet_class = "pc_arctic"
-				is_planet_class = "pc_tundra"
-				is_planet_class = "pc_arid"
+				is_dry = yes
+				is_wet = yes
+				is_cold = yes
 				is_planet_class = "pc_relic"
 			}
 		}
@@ -468,13 +388,9 @@ pm_high_gravity = {
 			factor = 2
 			planet_size > 22
 			OR = {
-				is_planet_class = "pc_desert"
-				is_planet_class = "pc_tropical"
-				is_planet_class = "pc_continental"
-				is_planet_class = "pc_ocean"
-				is_planet_class = "pc_arctic"
-				is_planet_class = "pc_tundra"
-				is_planet_class = "pc_arid"
+				is_dry = yes
+				is_wet = yes
+				is_cold = yes
 				is_planet_class = "pc_relic"
 			}
 		}
@@ -482,13 +398,9 @@ pm_high_gravity = {
 			factor = 0.5
 			planet_size < 16
 			OR = {
-				is_planet_class = "pc_desert"
-				is_planet_class = "pc_tropical"
-				is_planet_class = "pc_continental"
-				is_planet_class = "pc_ocean"
-				is_planet_class = "pc_arctic"
-				is_planet_class = "pc_tundra"
-				is_planet_class = "pc_arid"
+				is_dry = yes
+				is_wet = yes
+				is_cold = yes
 				is_planet_class = "pc_relic"
 			}
 		}
@@ -496,13 +408,9 @@ pm_high_gravity = {
 			factor = 0
 			planet_size < 12
 			OR = {
-				is_planet_class = "pc_desert"
-				is_planet_class = "pc_tropical"
-				is_planet_class = "pc_continental"
-				is_planet_class = "pc_ocean"
-				is_planet_class = "pc_arctic"
-				is_planet_class = "pc_tundra"
-				is_planet_class = "pc_arid"
+				is_dry = yes
+				is_wet = yes
+				is_cold = yes
 				is_planet_class = "pc_relic"
 			}
 		}
@@ -525,15 +433,9 @@ pm_mineral_rich = {
 		modifier = {
 			add = 10
 			OR = {
-				is_planet_class = "pc_desert"
-				is_planet_class = "pc_tropical"
-				is_planet_class = "pc_arid"
-				is_planet_class = "pc_continental"
-				is_planet_class = "pc_ocean"
-				is_planet_class = "pc_tundra"
-				is_planet_class = "pc_arctic"
-				is_planet_class = "pc_alpine"
-				is_planet_class = "pc_savannah"
+				is_dry = yes
+				is_wet = yes
+				is_cold = yes
 				is_planet_class = "pc_gaia"
 			}
 		}
@@ -568,15 +470,9 @@ pm_ultra_rich = {
 		modifier = {
 			add = 1
 			OR = {
-				is_planet_class = "pc_desert"
-				is_planet_class = "pc_tropical"
-				is_planet_class = "pc_arid"
-				is_planet_class = "pc_continental"
-				is_planet_class = "pc_ocean"
-				is_planet_class = "pc_tundra"
-				is_planet_class = "pc_arctic"
-				is_planet_class = "pc_alpine"
-				is_planet_class = "pc_savannah"
+				is_dry = yes
+				is_wet = yes
+				is_cold = yes
 				is_planet_class = "pc_gaia"
 				is_planet_class = "pc_relic"
 				is_planet_class = "pc_nuked"
@@ -605,15 +501,9 @@ pm_mineral_poor = {
 		modifier = {
 			add = 10
 			OR = {
-				is_planet_class = "pc_desert"
-				is_planet_class = "pc_tropical"
-				is_planet_class = "pc_arid"
-				is_planet_class = "pc_continental"
-				is_planet_class = "pc_ocean"
-				is_planet_class = "pc_tundra"
-				is_planet_class = "pc_arctic"
-				is_planet_class = "pc_alpine"
-				is_planet_class = "pc_savannah"
+				is_dry = yes
+				is_wet = yes
+				is_cold = yes
 				is_planet_class = "pc_molten"
 				is_planet_class = "pc_barren"
 				is_planet_class = "pc_barren_cold"
@@ -648,15 +538,9 @@ pm_titanic_life = {
 		modifier = {
 			add = 10
 			OR = {
-				is_planet_class = "pc_desert"
-				is_planet_class = "pc_tropical"
-				is_planet_class = "pc_arid"
-				is_planet_class = "pc_continental"
-				is_planet_class = "pc_ocean"
-				is_planet_class = "pc_tundra"
-				is_planet_class = "pc_arctic"
-				is_planet_class = "pc_alpine"
-				is_planet_class = "pc_savannah"
+				is_dry = yes
+				is_wet = yes
+				is_cold = yes
 				is_planet_class = "pc_gaia"
 				is_planet_class = "pc_relic"
 			}
@@ -691,15 +575,9 @@ pm_asteroid_belt = {
 		modifier = {
 			add = 10
 			OR = {
-				is_planet_class = "pc_desert"
-				is_planet_class = "pc_tropical"
-				is_planet_class = "pc_arid"
-				is_planet_class = "pc_continental"
-				is_planet_class = "pc_ocean"
-				is_planet_class = "pc_tundra"
-				is_planet_class = "pc_arctic"
-				is_planet_class = "pc_alpine"
-				is_planet_class = "pc_savannah"
+				is_dry = yes
+				is_wet = yes
+				is_cold = yes
 				is_planet_class = "pc_molten"
 				is_planet_class = "pc_barren"
 				is_planet_class = "pc_barren_cold"
@@ -732,15 +610,9 @@ pm_natural_beauty = {
 		modifier = {
 			add = 10
 			OR = {
-				is_planet_class = "pc_desert"
-				is_planet_class = "pc_tropical"
-				is_planet_class = "pc_arid"
-				is_planet_class = "pc_continental"
-				is_planet_class = "pc_ocean"
-				is_planet_class = "pc_tundra"
-				is_planet_class = "pc_arctic"
-				is_planet_class = "pc_alpine"
-				is_planet_class = "pc_savannah"
+				is_dry = yes
+				is_wet = yes
+				is_cold = yes
 				is_planet_class = "pc_relic"
 			}
 		}
@@ -763,15 +635,9 @@ pm_atmospheric_aphrodisiac = {
 		modifier = {
 			add = 10
 			OR = {
-				is_planet_class = "pc_desert"
-				is_planet_class = "pc_tropical"
-				is_planet_class = "pc_arid"
-				is_planet_class = "pc_continental"
-				is_planet_class = "pc_ocean"
-				is_planet_class = "pc_tundra"
-				is_planet_class = "pc_arctic"
-				is_planet_class = "pc_alpine"
-				is_planet_class = "pc_savannah"
+				is_dry = yes
+				is_wet = yes
+				is_cold = yes
 				is_planet_class = "pc_gaia"
 			}
 		}
@@ -790,15 +656,9 @@ pm_atmospheric_hallucinogen = {
 		modifier = {
 			add = 10
 			OR = {
-				is_planet_class = "pc_desert"
-				is_planet_class = "pc_tropical"
-				is_planet_class = "pc_arid"
-				is_planet_class = "pc_continental"
-				is_planet_class = "pc_ocean"
-				is_planet_class = "pc_tundra"
-				is_planet_class = "pc_arctic"
-				is_planet_class = "pc_alpine"
-				is_planet_class = "pc_savannah"
+				is_dry = yes
+				is_wet = yes
+				is_cold = yes
 				is_planet_class = "pc_gaia"
 			}
 		}
@@ -848,14 +708,9 @@ pm_bleak = {
 		modifier = {
 			add = 10
 			OR = {
-				is_planet_class = "pc_desert"
-				is_planet_class = "pc_arid"
-				is_planet_class = "pc_continental"
-				is_planet_class = "pc_ocean"
-				is_planet_class = "pc_tundra"
-				is_planet_class = "pc_arctic"
-				is_planet_class = "pc_alpine"
-				is_planet_class = "pc_savannah"
+				is_dry = yes
+				is_wet = yes
+				is_cold = yes
 				is_planet_class = "pc_relic"
 			}
 		}
