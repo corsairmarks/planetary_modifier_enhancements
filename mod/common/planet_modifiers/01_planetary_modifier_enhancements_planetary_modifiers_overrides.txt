@@ -217,6 +217,7 @@ pm_chthonian_planet = {
 			OR = {
 				has_planet_modifier = "pm_chthonian_planet"
 				has_planet_modifier = "pm_mineral_poor"
+				colonizable_planet = yes
 			}
 		}
 	}
