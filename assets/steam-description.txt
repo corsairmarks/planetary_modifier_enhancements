@@ -55,7 +55,7 @@ And these twenty-three [b]planet_modifiers[/b] are overridden:
 
 This mod also overrides a game setup event [b]game_setup.2[/b]. I find it unlikely other mods would be changing this event (it clears planetary modifiers for home systems); in any case first in wins for events.
 
-Built for Stellaris version 3.1.* "Lem."  Not compatible with achievements.
+Built for Stellaris version 3.2.* "Herbert."  Not compatible with achievements.
 
 [h3]When to Install[/h3]
 
