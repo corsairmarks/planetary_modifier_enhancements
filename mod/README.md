@@ -49,7 +49,7 @@ And these twenty-three `planet_modifiers` are overridden:
 
 This mod also overrides a game setup event `game_setup.2`. I find it unlikely other mods would be changing this event (it clears planetary modifiers for home systems); in any case first in wins for events.
 
-Built for Stellaris version 3.2.\* "Herbert."  Not compatible with achievements.
+Built for Stellaris version 3.3 "Libra."  Not compatible with achievements.
 
 ### When to Install
 
@@ -60,30 +60,30 @@ This mod can be safely added to your save after the game has started, but not re
 Overriding static modifiers and preempting events cause the game to log errors, so expect to see twenty-four (!) lines in the error.log file similar to:
 
 ```
-[22:34:20][game_singleobjectdatabase.h:147]: Object with key: pm_hazardous_weather already exists
-[22:34:20][game_singleobjectdatabase.h:147]: Object with key: pm_dangerous_wildlife already exists
-[22:34:20][game_singleobjectdatabase.h:147]: Object with key: pm_weak_magnetic_field already exists
-[22:34:20][game_singleobjectdatabase.h:147]: Object with key: pm_strong_magnetic_field already exists
-[22:34:20][game_singleobjectdatabase.h:147]: Object with key: pm_unstable_tectonics already exists
-[22:34:20][game_singleobjectdatabase.h:147]: Object with key: pm_tidal_locked already exists
-[22:34:20][game_singleobjectdatabase.h:147]: Object with key: pm_chthonian_planet already exists
-[22:34:20][game_singleobjectdatabase.h:147]: Object with key: pm_asteroid_impacts already exists
-[22:34:20][game_singleobjectdatabase.h:147]: Object with key: pm_extensive_moon_system already exists
-[22:34:20][game_singleobjectdatabase.h:147]: Object with key: pm_carbon_world already exists
-[22:34:20][game_singleobjectdatabase.h:147]: Object with key: pm_wild_storms already exists
-[22:34:20][game_singleobjectdatabase.h:147]: Object with key: pm_low_gravity already exists
-[22:34:20][game_singleobjectdatabase.h:147]: Object with key: pm_high_gravity already exists
-[22:34:20][game_singleobjectdatabase.h:147]: Object with key: pm_mineral_rich already exists
-[22:34:20][game_singleobjectdatabase.h:147]: Object with key: pm_ultra_rich already exists
-[22:34:20][game_singleobjectdatabase.h:147]: Object with key: pm_mineral_poor already exists
-[22:34:20][game_singleobjectdatabase.h:147]: Object with key: pm_titanic_life already exists
-[22:34:20][game_singleobjectdatabase.h:147]: Object with key: pm_asteroid_belt already exists
-[22:34:20][game_singleobjectdatabase.h:147]: Object with key: pm_natural_beauty already exists
-[22:34:20][game_singleobjectdatabase.h:147]: Object with key: pm_atmospheric_aphrodisiac already exists
-[22:34:20][game_singleobjectdatabase.h:147]: Object with key: pm_atmospheric_hallucinogen already exists
-[22:34:20][game_singleobjectdatabase.h:147]: Object with key: pm_lush already exists
-[22:34:20][game_singleobjectdatabase.h:147]: Object with key: pm_bleak already exists
-[22:34:22][eventmanager.cpp:355]: an event with id [game_start.2] already exists!  file: events/game_start.txt line: 213
+[16:52:09][game_singleobjectdatabase.h:147]: Object with key: pm_hazardous_weather already exists, using the one at  file: common/planet_modifiers/01_planetary_modifier_enhancements_planetary_modifiers_overrides.txt line: 4
+[16:52:09][game_singleobjectdatabase.h:147]: Object with key: pm_dangerous_wildlife already exists, using the one at  file: common/planet_modifiers/01_planetary_modifier_enhancements_planetary_modifiers_overrides.txt line: 34
+[16:52:09][game_singleobjectdatabase.h:147]: Object with key: pm_weak_magnetic_field already exists, using the one at  file: common/planet_modifiers/01_planetary_modifier_enhancements_planetary_modifiers_overrides.txt line: 71
+[16:52:09][game_singleobjectdatabase.h:147]: Object with key: pm_strong_magnetic_field already exists, using the one at  file: common/planet_modifiers/01_planetary_modifier_enhancements_planetary_modifiers_overrides.txt line: 106
+[16:52:09][game_singleobjectdatabase.h:147]: Object with key: pm_unstable_tectonics already exists, using the one at  file: common/planet_modifiers/01_planetary_modifier_enhancements_planetary_modifiers_overrides.txt line: 141
+[16:52:09][game_singleobjectdatabase.h:147]: Object with key: pm_tidal_locked already exists, using the one at  file: common/planet_modifiers/01_planetary_modifier_enhancements_planetary_modifiers_overrides.txt line: 175
+[16:52:09][game_singleobjectdatabase.h:147]: Object with key: pm_chthonian_planet already exists, using the one at  file: common/planet_modifiers/01_planetary_modifier_enhancements_planetary_modifiers_overrides.txt line: 209
+[16:52:09][game_singleobjectdatabase.h:147]: Object with key: pm_asteroid_impacts already exists, using the one at  file: common/planet_modifiers/01_planetary_modifier_enhancements_planetary_modifiers_overrides.txt line: 229
+[16:52:09][game_singleobjectdatabase.h:147]: Object with key: pm_extensive_moon_system already exists, using the one at  file: common/planet_modifiers/01_planetary_modifier_enhancements_planetary_modifiers_overrides.txt line: 262
+[16:52:09][game_singleobjectdatabase.h:147]: Object with key: pm_carbon_world already exists, using the one at  file: common/planet_modifiers/01_planetary_modifier_enhancements_planetary_modifiers_overrides.txt line: 290
+[16:52:09][game_singleobjectdatabase.h:147]: Object with key: pm_wild_storms already exists, using the one at  file: common/planet_modifiers/01_planetary_modifier_enhancements_planetary_modifiers_overrides.txt line: 320
+[16:52:09][game_singleobjectdatabase.h:147]: Object with key: pm_low_gravity already exists, using the one at  file: common/planet_modifiers/01_planetary_modifier_enhancements_planetary_modifiers_overrides.txt line: 350
+[16:52:09][game_singleobjectdatabase.h:147]: Object with key: pm_high_gravity already exists, using the one at  file: common/planet_modifiers/01_planetary_modifier_enhancements_planetary_modifiers_overrides.txt line: 437
+[16:52:09][game_singleobjectdatabase.h:147]: Object with key: pm_mineral_rich already exists, using the one at  file: common/planet_modifiers/01_planetary_modifier_enhancements_planetary_modifiers_overrides.txt line: 524
+[16:52:09][game_singleobjectdatabase.h:147]: Object with key: pm_ultra_rich already exists, using the one at  file: common/planet_modifiers/01_planetary_modifier_enhancements_planetary_modifiers_overrides.txt line: 567
+[16:52:09][game_singleobjectdatabase.h:147]: Object with key: pm_mineral_poor already exists, using the one at  file: common/planet_modifiers/01_planetary_modifier_enhancements_planetary_modifiers_overrides.txt line: 604
+[16:52:09][game_singleobjectdatabase.h:147]: Object with key: pm_titanic_life already exists, using the one at  file: common/planet_modifiers/01_planetary_modifier_enhancements_planetary_modifiers_overrides.txt line: 647
+[16:52:09][game_singleobjectdatabase.h:147]: Object with key: pm_asteroid_belt already exists, using the one at  file: common/planet_modifiers/01_planetary_modifier_enhancements_planetary_modifiers_overrides.txt line: 690
+[16:52:09][game_singleobjectdatabase.h:147]: Object with key: pm_natural_beauty already exists, using the one at  file: common/planet_modifiers/01_planetary_modifier_enhancements_planetary_modifiers_overrides.txt line: 731
+[16:52:09][game_singleobjectdatabase.h:147]: Object with key: pm_atmospheric_aphrodisiac already exists, using the one at  file: common/planet_modifiers/01_planetary_modifier_enhancements_planetary_modifiers_overrides.txt line: 762
+[16:52:09][game_singleobjectdatabase.h:147]: Object with key: pm_atmospheric_hallucinogen already exists, using the one at  file: common/planet_modifiers/01_planetary_modifier_enhancements_planetary_modifiers_overrides.txt line: 789
+[16:52:09][game_singleobjectdatabase.h:147]: Object with key: pm_lush already exists, using the one at  file: common/planet_modifiers/01_planetary_modifier_enhancements_planetary_modifiers_overrides.txt line: 816
+[16:52:09][game_singleobjectdatabase.h:147]: Object with key: pm_bleak already exists, using the one at  file: common/planet_modifiers/01_planetary_modifier_enhancements_planetary_modifiers_overrides.txt line: 847
+[16:52:10][eventmanager.cpp:361]: an event with id [game_start.2] already exists!  file: events/game_start.txt line: 225
 ```
 
 ## Changelog
@@ -104,6 +104,7 @@ Overriding static modifiers and preempting events cause the game to log errors, 
     * Moons of moons in Extensive Moon Systems now also have the Extensive Moon System Moon planetary modifier added
     * At game start, ensure unhabitable planets with a plentiful minerals modifier(s) have a minerals deposit if they doesn't already have an orbital deposit
 * 2.6.0 Marked compatible with Stellaris version 3.2 "Herbert" - no script changes
+* 2.7.0 Marked compatible with Stellaris version 3.3 "Libra" - no script changes
 
 ## Source Code
 
