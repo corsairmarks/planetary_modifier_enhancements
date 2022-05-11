@@ -1,7 +1,7 @@
 pm_extensive_moon_system_moon = {
 	spawn_chance = {
 		modifier = {
-			factor = 1000
+			add = 1000
 			exists = orbit
 			orbit = {
 				OR = {
