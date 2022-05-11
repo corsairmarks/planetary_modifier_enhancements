@@ -49,7 +49,7 @@ And these twenty-three `planet_modifiers` are overridden:
 
 This mod also overrides a game setup event `game_setup.2`. I find it unlikely other mods would be changing this event (it clears planetary modifiers for home systems); in any case first in wins for events.
 
-Built for Stellaris version 3.3 "Libra."  Not compatible with achievements.  Largely compatible with Guilli's Planet Modifiers and Features - Guilli's static modifier changes will take precedence but there are no error-causing conflicts.
+Built for Stellaris version 3.4 "Cepheus."  Not compatible with achievements.  Largely compatible with Guilli's Planet Modifiers and Features - Guilli's static modifier changes will take precedence but there are no error-causing conflicts.
 
 ### When to Install
 
@@ -105,6 +105,7 @@ Overriding static modifiers and preempting events cause the game to log errors, 
     * At game start, ensure unhabitable planets with a plentiful minerals modifier(s) have a minerals deposit if they doesn't already have an orbital deposit
 * 2.6.0 Marked compatible with Stellaris version 3.2 "Herbert" - no script changes
 * 2.7.0 Marked compatible with Stellaris version 3.3 "Libra" - no script changes
+* 2.8.0 Marked compatible with Stellaris version 3.4 "Cepheus" - minor enhancement to the Carbon World spawn chances
 
 ## Source Code
 
