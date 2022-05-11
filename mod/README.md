@@ -105,7 +105,9 @@ Overriding static modifiers and preempting events cause the game to log errors, 
     * At game start, ensure unhabitable planets with a plentiful minerals modifier(s) have a minerals deposit if they doesn't already have an orbital deposit
 * 2.6.0 Marked compatible with Stellaris version 3.2 "Herbert" - no script changes
 * 2.7.0 Marked compatible with Stellaris version 3.3 "Libra" - no script changes
-* 2.8.0 Marked compatible with Stellaris version 3.4 "Cepheus" - minor enhancement to the Carbon World spawn chances
+* 3.0.0 Update for Stellaris version 3.4 "Cepheus"
+    * Integrate minor enhancement to the Carbon World spawn chances
+    * Use memory optimization feature for effects and triggers
 
 ## Source Code
 

@@ -1,6 +1,7 @@
 # beware, this iterates every planet; it's intended to be called once to set up modifiers on_game_start
 # if you want to apply Extensive Moon System Moon to a single planet's moons, call the planet-specific effect instead of this one
 find_and_apply_extensive_moon_system_child_modifier = {
+	optimize_memory
     every_galaxy_planet = {
 		limit = {
 			is_planet_class = pc_gas_giant
@@ -16,6 +17,7 @@ find_and_apply_extensive_moon_system_child_modifier = {
 # use this if you want to apply Extensive Moon System Moon to a single planet's moons
 # this = planet
 apply_extensive_moon_system_child_modifier_planet = {
+	optimize_memory
 	every_moon = {
 		limit = { has_extensive_moon_system_modifier = no }
 		add_modifier = { modifier = extensive_moon_system_moon }
@@ -27,6 +29,7 @@ apply_extensive_moon_system_child_modifier_planet = {
 
 # beware, this iterates every planet; it's intended to be called once to set up deposits on_game_start
 find_and_add_minerals_to_mineral_plentiful_unhabitable_planets = {
+	optimize_memory
 	every_galaxy_planet = {
 		limit = {
 			can_have_habitable_deposits = no
