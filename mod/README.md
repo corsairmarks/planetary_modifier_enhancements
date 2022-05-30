@@ -108,6 +108,7 @@ Overriding static modifiers and preempting events cause the game to log errors, 
 * 3.0.0 Update for Stellaris version 3.4 "Cepheus"
     * Integrate minor enhancement to the Carbon World spawn chances
     * Use memory optimization feature for effects and triggers
+* 3.1.0 Use triggers for `habitable_planet` and `uninhabitable_regular_planet` instead of copy/pasted, inconsistent lists of planet classes - should also lead to wider compatibility with mods that replace these triggers to support additional planet classes
 
 ## Source Code
 
