@@ -5,23 +5,13 @@ pm_hazardous_weather = {
 	spawn_chance = {
 		modifier = {
 			add = 10
-			OR = {
-				is_planet_class = "pc_desert"
-				is_planet_class = "pc_tropical"
-				is_planet_class = "pc_arid"
-				is_planet_class = "pc_continental"
-				is_planet_class = "pc_ocean"
-				is_planet_class = "pc_tundra"
-				is_planet_class = "pc_arctic"
-				is_planet_class = "pc_alpine"
-				is_planet_class = "pc_savannah"
-				is_planet_class = "pc_relic"
-			}
+			habitable_planet = yes
 		}
 		modifier = {
 			factor = 0
 			OR = {
 				is_planet_class = "pc_gaia" # Gaia Worlds are Paradise Planets, hence no Hazardous Weather conditions.
+				is_planet_class = "pc_city"
 				has_planet_modifier = "pm_hazardous_weather"
 			}
 		}
@@ -35,17 +25,7 @@ pm_dangerous_wildlife = {
 	spawn_chance = {
 		modifier = {
 			add = 10
-			OR = {
-				is_planet_class = "pc_desert"
-				is_planet_class = "pc_tropical"
-				is_planet_class = "pc_arid"
-				is_planet_class = "pc_continental"
-				is_planet_class = "pc_ocean"
-				is_planet_class = "pc_tundra"
-				is_planet_class = "pc_arctic"
-				is_planet_class = "pc_alpine"
-				is_planet_class = "pc_savannah"
-			}
+			habitable_planet = yes
 		}
 		modifier = {
 			factor = 2
@@ -58,6 +38,9 @@ pm_dangerous_wildlife = {
 		modifier = {
 			factor = 0
 			OR = {
+				is_planet_class = "pc_gaia"
+				is_planet_class = "pc_relic"
+				is_planet_class = "pc_city"
 				has_planet_modifier = "pm_dangerous_wildlife"
 				has_planet_modifier = "pm_titanic_life"
 			}
@@ -72,18 +55,7 @@ pm_weak_magnetic_field = {
 	spawn_chance = {
 		modifier = {
 			add = 10
-			OR = {
-				is_planet_class = "pc_desert"
-				is_planet_class = "pc_tropical"
-				is_planet_class = "pc_arid"
-				is_planet_class = "pc_continental"
-				is_planet_class = "pc_ocean"
-				is_planet_class = "pc_tundra"
-				is_planet_class = "pc_arctic"
-				is_planet_class = "pc_alpine"
-				is_planet_class = "pc_savannah"
-				is_planet_class = "pc_relic"
-			}
+			habitable_planet = yes
 		}
 		modifier = {
 			factor = 2
@@ -93,6 +65,7 @@ pm_weak_magnetic_field = {
 			factor = 0
 			OR = {
 				is_planet_class = "pc_gaia" # Gaia Worlds are Paradise Planets, hence there should be no negative modifiers.
+				is_planet_class = "pc_city"
 				has_planet_modifier = "pm_weak_magnetic_field"
 				has_planet_modifier = "pm_strong_magnetic_field"
 			}
@@ -107,18 +80,7 @@ pm_strong_magnetic_field = {
 	spawn_chance = {
 		modifier = {
 			add = 10
-			OR = {
-				is_planet_class = "pc_desert"
-				is_planet_class = "pc_tropical"
-				is_planet_class = "pc_arid"
-				is_planet_class = "pc_continental"
-				is_planet_class = "pc_ocean"
-				is_planet_class = "pc_tundra"
-				is_planet_class = "pc_arctic"
-				is_planet_class = "pc_alpine"
-				is_planet_class = "pc_savannah"
-				is_planet_class = "pc_relic"
-			}
+			habitable_planet = yes
 		}
 		modifier = {
 			factor = 2
@@ -128,6 +90,7 @@ pm_strong_magnetic_field = {
 			factor = 0
 			OR = {
 				is_planet_class = "pc_gaia" # Gaia Worlds are Paradise Planets, hence there should be no negative modifiers.
+				is_planet_class = "pc_city"
 				has_planet_modifier = "pm_strong_magnetic_field"
 				has_planet_modifier = "pm_weak_magnetic_field"
 			}
@@ -142,16 +105,11 @@ pm_unstable_tectonics = {
 	spawn_chance = {
 		modifier = {
 			add = 10
-			OR = {
-				is_planet_class = "pc_desert"
-				is_planet_class = "pc_tropical"
-				is_planet_class = "pc_arid"
-				is_planet_class = "pc_continental"
-				is_planet_class = "pc_ocean"
-				is_planet_class = "pc_tundra"
-				is_planet_class = "pc_arctic"
-				is_planet_class = "pc_alpine"
-				is_planet_class = "pc_savannah"
+			habitable_planet = yes
+			NOR = {
+				is_planet_class = "pc_gaia"
+				is_planet_class = "pc_relic"
+				is_planet_class = "pc_city"
 			}
 		}
 		modifier = {
@@ -176,23 +134,13 @@ pm_tidal_locked = {
 	spawn_chance = {
 		modifier = {
 			add = 1
-			OR = {
-				is_planet_class = "pc_desert"
-				is_planet_class = "pc_tropical"
-				is_planet_class = "pc_arid"
-				is_planet_class = "pc_continental"
-				is_planet_class = "pc_ocean"
-				is_planet_class = "pc_tundra"
-				is_planet_class = "pc_arctic"
-				is_planet_class = "pc_alpine"
-				is_planet_class = "pc_savannah"
-				is_planet_class = "pc_relic"
-			}
+			habitable_planet = yes
 		}
 		modifier = {
 			factor = 0
 			OR = {
 				is_planet_class = "pc_gaia" # Gaia Worlds are Paradise Planets, hence there should be no negative modifiers.
+				is_planet_class = "pc_city"
 				has_planet_modifier = "pm_tidal_locked"
 			}
 		}
@@ -230,16 +178,11 @@ pm_asteroid_impacts = {
 	spawn_chance = {
 		modifier = {
 			add = 10
-			OR = {
-				is_planet_class = "pc_desert"
-				is_planet_class = "pc_tropical"
-				is_planet_class = "pc_arid"
-				is_planet_class = "pc_continental"
-				is_planet_class = "pc_ocean"
-				is_planet_class = "pc_tundra"
-				is_planet_class = "pc_arctic"
-				is_planet_class = "pc_alpine"
-				is_planet_class = "pc_savannah"
+			habitable_planet = yes
+			NOR = {
+				is_planet_class = "pc_gaia"
+				is_planet_class = "pc_relic"
+				is_planet_class = "pc_city"
 			}
 		}
 		modifier = {
@@ -250,6 +193,7 @@ pm_asteroid_impacts = {
 			factor = 0
 			OR = {
 				is_planet_class = "pc_gaia" # Gaia Worlds are Paradise Planets, hence there should be no negative modifiers.
+				is_planet_class = "pc_city"
 				has_planet_modifier = "pm_asteroid_impacts"
 			}
 		}
@@ -317,23 +261,13 @@ pm_wild_storms = {
 	spawn_chance = {
 		modifier = {
 			add = 10
-			OR = {
-				is_planet_class = "pc_desert"
-				is_planet_class = "pc_tropical"
-				is_planet_class = "pc_arid"
-				is_planet_class = "pc_continental"
-				is_planet_class = "pc_ocean"
-				is_planet_class = "pc_tundra"
-				is_planet_class = "pc_arctic"
-				is_planet_class = "pc_alpine"
-				is_planet_class = "pc_savannah"
-				is_planet_class = "pc_relic"
-			}
+			habitable_planet = yes
 		}
 		modifier = {
 			factor = 0
 			OR = {
 				is_planet_class = "pc_gaia" # Gaia Worlds are Paradise Planets, hence there should be no negative modifiers.
+				is_planet_class = "pc_city"
 				has_planet_modifier = "pm_wild_storms"
 			}
 		}
@@ -342,84 +276,38 @@ pm_wild_storms = {
 	modifier = "wild_storms"
 }
 
-# allow multiple modifiers
+# allow multiple modifiers, account for all habitable planet types
 pm_low_gravity = {
 	spawn_chance = {
 		modifier = {
 			add = 10
-			OR = {
-				is_planet_class = "pc_desert"
-				is_planet_class = "pc_tropical"
-				is_planet_class = "pc_arid"
-				is_planet_class = "pc_continental"
-				is_planet_class = "pc_ocean"
-				is_planet_class = "pc_tundra"
-				is_planet_class = "pc_arctic"
-				is_planet_class = "pc_alpine"
-				is_planet_class = "pc_savannah"
-				is_planet_class = "pc_relic"
-			}
+			habitable_planet = yes
 		}
 		modifier = {
 			factor = 2
 			planet_size < 14
-			OR = {
-				is_planet_class = "pc_desert"
-				is_planet_class = "pc_tropical"
-				is_planet_class = "pc_continental"
-				is_planet_class = "pc_ocean"
-				is_planet_class = "pc_arctic"
-				is_planet_class = "pc_tundra"
-				is_planet_class = "pc_arid"
-				is_planet_class = "pc_relic"
-			}
+			habitable_planet = yes
 		}
 		modifier = {
 			factor = 2
 			planet_size < 12
-			OR = {
-				is_planet_class = "pc_desert"
-				is_planet_class = "pc_tropical"
-				is_planet_class = "pc_continental"
-				is_planet_class = "pc_ocean"
-				is_planet_class = "pc_arctic"
-				is_planet_class = "pc_tundra"
-				is_planet_class = "pc_arid"
-				is_planet_class = "pc_relic"
-			}
+			habitable_planet = yes
 		}
 		modifier = {
 			factor = 2
 			planet_size < 7
-			OR = {
-				is_planet_class = "pc_desert"
-				is_planet_class = "pc_tropical"
-				is_planet_class = "pc_continental"
-				is_planet_class = "pc_ocean"
-				is_planet_class = "pc_arctic"
-				is_planet_class = "pc_tundra"
-				is_planet_class = "pc_arid"
-				is_planet_class = "pc_relic"
-			}
+			habitable_planet = yes
 		}
 		modifier = {
 			factor = 0.5
 			planet_size > 19
-			OR = {
-				is_planet_class = "pc_desert"
-				is_planet_class = "pc_tropical"
-				is_planet_class = "pc_continental"
-				is_planet_class = "pc_ocean"
-				is_planet_class = "pc_arctic"
-				is_planet_class = "pc_tundra"
-				is_planet_class = "pc_arid"
-				is_planet_class = "pc_relic"
-			}
+			habitable_planet = yes
 		}
 		modifier = {
 			factor = 0
 			OR = {
 				is_planet_class = "pc_gaia" # Gaia Worlds are Paradise Planets, hence there should be no negative modifiers.
+				is_planet_class = "pc_city"
 				has_planet_modifier = "pm_high_gravity"
 				has_planet_modifier = "pm_low_gravity"
 			}
@@ -429,84 +317,38 @@ pm_low_gravity = {
 	modifier = "low_gravity"
 }
 
-# allow multiple modifiers, disallow gaia (was add = 0 instead of factor)
+# allow multiple modifiers, disallow gaia (was add = 0 instead of factor), account for all habitable planet types
 pm_high_gravity = {
 	spawn_chance = {
 		modifier = {
 			add = 10
-			OR = {
-				is_planet_class = "pc_desert"
-				is_planet_class = "pc_tropical"
-				is_planet_class = "pc_arid"
-				is_planet_class = "pc_continental"
-				is_planet_class = "pc_ocean"
-				is_planet_class = "pc_tundra"
-				is_planet_class = "pc_arctic"
-				is_planet_class = "pc_alpine"
-				is_planet_class = "pc_savannah"
-				is_planet_class = "pc_relic"
-			}
+			habitable_planet = yes
 		}
 		modifier = {
 			factor = 2
 			planet_size > 19
-			OR = {
-				is_planet_class = "pc_desert"
-				is_planet_class = "pc_tropical"
-				is_planet_class = "pc_continental"
-				is_planet_class = "pc_ocean"
-				is_planet_class = "pc_arctic"
-				is_planet_class = "pc_tundra"
-				is_planet_class = "pc_arid"
-				is_planet_class = "pc_relic"
-			}
+			habitable_planet = yes
 		}
 		modifier = {
 			factor = 2
 			planet_size > 22
-			OR = {
-				is_planet_class = "pc_desert"
-				is_planet_class = "pc_tropical"
-				is_planet_class = "pc_continental"
-				is_planet_class = "pc_ocean"
-				is_planet_class = "pc_arctic"
-				is_planet_class = "pc_tundra"
-				is_planet_class = "pc_arid"
-				is_planet_class = "pc_relic"
-			}
+			habitable_planet = yes
 		}
 		modifier = {
 			factor = 0.5
 			planet_size < 16
-			OR = {
-				is_planet_class = "pc_desert"
-				is_planet_class = "pc_tropical"
-				is_planet_class = "pc_continental"
-				is_planet_class = "pc_ocean"
-				is_planet_class = "pc_arctic"
-				is_planet_class = "pc_tundra"
-				is_planet_class = "pc_arid"
-				is_planet_class = "pc_relic"
-			}
+			habitable_planet = yes
 		}
 		modifier = {
 			factor = 0
 			planet_size < 12
-			OR = {
-				is_planet_class = "pc_desert"
-				is_planet_class = "pc_tropical"
-				is_planet_class = "pc_continental"
-				is_planet_class = "pc_ocean"
-				is_planet_class = "pc_arctic"
-				is_planet_class = "pc_tundra"
-				is_planet_class = "pc_arid"
-				is_planet_class = "pc_relic"
-			}
+			habitable_planet = yes
 		}
 		modifier = {
 			factor = 0
 			OR = {
-				is_planet_class = "pc_gaia" # Gaia Planets are basically Paradise Worlds and shouldn't suffer from bad planet modifiers.
+				is_planet_class = "pc_gaia" # Gaia Worlds are Paradise Planets, hence there should be no negative modifiers.
+				is_planet_class = "pc_city"
 				has_planet_modifier = "pm_low_gravity"
 				has_planet_modifier = "pm_high_gravity"
 			}
@@ -521,18 +363,7 @@ pm_mineral_rich = {
 	spawn_chance = {
 		modifier = {
 			add = 10
-			OR = {
-				is_planet_class = "pc_desert"
-				is_planet_class = "pc_tropical"
-				is_planet_class = "pc_arid"
-				is_planet_class = "pc_continental"
-				is_planet_class = "pc_ocean"
-				is_planet_class = "pc_tundra"
-				is_planet_class = "pc_arctic"
-				is_planet_class = "pc_alpine"
-				is_planet_class = "pc_savannah"
-				is_planet_class = "pc_gaia"
-			}
+			habitable_planet = yes
 		}
 		modifier = {
 			add = 5
@@ -549,6 +380,8 @@ pm_mineral_rich = {
 		modifier = {
 			factor = 0
 			OR = {
+				is_planet_class = "pc_relic"
+				is_planet_class = "pc_city"
 				has_planet_modifier = "pm_mineral_poor"
 				has_planet_modifier = "pm_mineral_rich"
 				has_planet_modifier = "pm_ultra_rich"
@@ -564,20 +397,7 @@ pm_ultra_rich = {
 	spawn_chance = {
 		modifier = {
 			add = 1
-			OR = {
-				is_planet_class = "pc_desert"
-				is_planet_class = "pc_tropical"
-				is_planet_class = "pc_arid"
-				is_planet_class = "pc_continental"
-				is_planet_class = "pc_ocean"
-				is_planet_class = "pc_tundra"
-				is_planet_class = "pc_arctic"
-				is_planet_class = "pc_alpine"
-				is_planet_class = "pc_savannah"
-				is_planet_class = "pc_gaia"
-				is_planet_class = "pc_relic"
-				is_planet_class = "pc_nuked"
-			}
+			habitable_planet = yes
 		}
 		modifier = {
 			factor = 8
@@ -586,6 +406,7 @@ pm_ultra_rich = {
 		modifier = {
 			factor = 0
 			OR = {
+				is_planet_class = "pc_city"
 				has_planet_modifier = "pm_mineral_poor"
 				has_planet_modifier = "pm_mineral_rich"
 				has_planet_modifier = "pm_ultra_rich"
@@ -602,21 +423,8 @@ pm_mineral_poor = {
 		modifier = {
 			add = 10
 			OR = {
-				is_planet_class = "pc_desert"
-				is_planet_class = "pc_tropical"
-				is_planet_class = "pc_arid"
-				is_planet_class = "pc_continental"
-				is_planet_class = "pc_ocean"
-				is_planet_class = "pc_tundra"
-				is_planet_class = "pc_arctic"
-				is_planet_class = "pc_alpine"
-				is_planet_class = "pc_savannah"
-				is_planet_class = "pc_molten"
-				is_planet_class = "pc_barren"
-				is_planet_class = "pc_barren_cold"
-				is_planet_class = "pc_toxic"
-				is_planet_class = "pc_frozen"
-				is_planet_class = "pc_relic"
+				habitable_planet = yes
+				uninhabitable_regular_planet = yes
 			}
 		}
 		modifier = {
@@ -626,7 +434,8 @@ pm_mineral_poor = {
 		modifier = {
 			factor = 0
 			OR = {
-				is_planet_class = "pc_gaia" #Gaia Worlds are Paradise Planets, hence there should be no negative modifiers.
+				is_planet_class = "pc_gaia" # Gaia Worlds are Paradise Planets, hence there should be no negative modifiers.
+				is_planet_class = "pc_city"
 				has_planet_modifier = "pm_mineral_poor"
 				has_planet_modifier = "pm_mineral_rich"
 				has_planet_modifier = "pm_ultra_rich"
@@ -644,19 +453,7 @@ pm_titanic_life = {
 	spawn_chance = {
 		modifier = {
 			add = 10
-			OR = {
-				is_planet_class = "pc_desert"
-				is_planet_class = "pc_tropical"
-				is_planet_class = "pc_arid"
-				is_planet_class = "pc_continental"
-				is_planet_class = "pc_ocean"
-				is_planet_class = "pc_tundra"
-				is_planet_class = "pc_arctic"
-				is_planet_class = "pc_alpine"
-				is_planet_class = "pc_savannah"
-				is_planet_class = "pc_gaia"
-				is_planet_class = "pc_relic"
-			}
+			habitable_planet = yes
 		}
 		modifier = {
 			factor = 2
@@ -673,6 +470,7 @@ pm_titanic_life = {
 		modifier = {
 			factor = 0
 			OR = {
+				is_planet_class = "pc_city"
 				has_planet_modifier = "pm_titanic_life"
 				has_planet_modifier = "pm_dangerous_wildlife"
 			}
@@ -688,22 +486,8 @@ pm_asteroid_belt = {
 		modifier = {
 			add = 10
 			OR = {
-				is_planet_class = "pc_desert"
-				is_planet_class = "pc_tropical"
-				is_planet_class = "pc_arid"
-				is_planet_class = "pc_continental"
-				is_planet_class = "pc_ocean"
-				is_planet_class = "pc_tundra"
-				is_planet_class = "pc_arctic"
-				is_planet_class = "pc_alpine"
-				is_planet_class = "pc_savannah"
-				is_planet_class = "pc_molten"
-				is_planet_class = "pc_barren"
-				is_planet_class = "pc_barren_cold"
-				is_planet_class = "pc_toxic"
-				is_planet_class = "pc_frozen"
-				is_planet_class = "pc_gaia"
-				is_planet_class = "pc_relic"
+				habitable_planet = yes
+				uninhabitable_regular_planet = yes
 			}
 		}
 		modifier = {
@@ -713,6 +497,7 @@ pm_asteroid_belt = {
 		modifier = {
 			factor = 0
 			OR = {
+				is_planet_class = "pc_city"
 				has_planet_modifier = "pm_asteroid_belt"
 				has_moon = yes
 				is_moon = yes
@@ -728,26 +513,18 @@ pm_natural_beauty = {
 	spawn_chance = {
 		modifier = {
 			add = 10
-			OR = {
-				is_planet_class = "pc_desert"
-				is_planet_class = "pc_tropical"
-				is_planet_class = "pc_arid"
-				is_planet_class = "pc_continental"
-				is_planet_class = "pc_ocean"
-				is_planet_class = "pc_tundra"
-				is_planet_class = "pc_arctic"
-				is_planet_class = "pc_alpine"
-				is_planet_class = "pc_savannah"
-				is_planet_class = "pc_relic"
-			}
+			habitable_planet = yes
 		}
 		modifier = {
-			add = 30
+			add = 20 # above modifier+trigger already gives +10 for gaia
 			is_planet_class = "pc_gaia"
 		}
 		modifier = {
 			factor = 0
-			has_planet_modifier = "pm_natural_beauty"
+			OR = {
+				is_planet_class = "pc_city"
+				has_planet_modifier = "pm_natural_beauty"
+			}
 		}
 	}
 
@@ -759,22 +536,15 @@ pm_atmospheric_aphrodisiac = {
 	spawn_chance = {
 		modifier = {
 			add = 10
-			OR = {
-				is_planet_class = "pc_desert"
-				is_planet_class = "pc_tropical"
-				is_planet_class = "pc_arid"
-				is_planet_class = "pc_continental"
-				is_planet_class = "pc_ocean"
-				is_planet_class = "pc_tundra"
-				is_planet_class = "pc_arctic"
-				is_planet_class = "pc_alpine"
-				is_planet_class = "pc_savannah"
-				is_planet_class = "pc_gaia"
-			}
+			habitable_planet = yes
 		}
 		modifier = {
 			factor = 0
-			has_planet_modifier = "pm_atmospheric_aphrodisiac"
+			OR = {
+				is_planet_class = "pc_relic"
+				is_planet_class = "pc_city"
+				has_planet_modifier = "pm_atmospheric_aphrodisiac"
+			}
 		}
 	}
 
@@ -786,22 +556,15 @@ pm_atmospheric_hallucinogen = {
 	spawn_chance = {
 		modifier = {
 			add = 10
-			OR = {
-				is_planet_class = "pc_desert"
-				is_planet_class = "pc_tropical"
-				is_planet_class = "pc_arid"
-				is_planet_class = "pc_continental"
-				is_planet_class = "pc_ocean"
-				is_planet_class = "pc_tundra"
-				is_planet_class = "pc_arctic"
-				is_planet_class = "pc_alpine"
-				is_planet_class = "pc_savannah"
-				is_planet_class = "pc_gaia"
-			}
+			habitable_planet = yes
 		}
 		modifier = {
 			factor = 0
-			has_planet_modifier = "pm_atmospheric_hallucinogen"
+			OR = {
+				is_planet_class = "pc_relic"
+				is_planet_class = "pc_city"
+				has_planet_modifier = "pm_atmospheric_hallucinogen"
+			}
 		}
 	}
 
@@ -844,22 +607,14 @@ pm_bleak = {
 	spawn_chance = {
 		modifier = {
 			add = 10
-			OR = {
-				is_planet_class = "pc_desert"
-				is_planet_class = "pc_arid"
-				is_planet_class = "pc_continental"
-				is_planet_class = "pc_ocean"
-				is_planet_class = "pc_tundra"
-				is_planet_class = "pc_arctic"
-				is_planet_class = "pc_alpine"
-				is_planet_class = "pc_savannah"
-				is_planet_class = "pc_relic"
-			}
+			habitable_planet = yes
 		}
 		modifier = {
 			factor = 0
 			OR = {
 				is_planet_class = "pc_gaia"
+				is_planet_class = "pc_tropical"
+				is_planet_class = "pc_city"
 				has_planet_modifier = "pm_bleak"
 				has_planet_modifier = "pm_lush"
 			}
