@@ -110,6 +110,7 @@ Overriding static modifiers and preempting events cause the game to log errors, 
     * Use memory optimization feature for effects and triggers
 * 3.1.0 Use triggers for `habitable_planet` and `uninhabitable_regular_planet` instead of copy/pasted, inconsistent lists of planet classes - should also lead to wider compatibility with mods that replace these triggers to support additional planet classes
 * 4.0.0 Update for Stellaris version 3.6 "Orion" (and changes from version 3.5 "Fornax") - integrate `game_start.2` changes
+* 5.0.0 Add a compatibility trigger for other mods to check whether this one is active, remove old compatibility global flag
 
 ## Source Code
 
