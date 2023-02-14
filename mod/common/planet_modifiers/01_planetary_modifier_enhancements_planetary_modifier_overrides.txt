@@ -11,6 +11,7 @@ pm_hazardous_weather = {
 			factor = 0
 			OR = {
 				is_planet_class = "pc_gaia" # Gaia Worlds are Paradise Planets, hence no Hazardous Weather conditions.
+				is_pd_gaia = yes
 				is_planet_class = "pc_city"
 				has_planet_modifier = "pm_hazardous_weather"
 			}
@@ -39,7 +40,7 @@ pm_dangerous_wildlife = {
 			factor = 0
 			OR = {
 				is_planet_class = "pc_gaia"
-				is_planet_class = "pc_relic"
+				is_pd_gaia = yes
 				is_planet_class = "pc_city"
 				has_planet_modifier = "pm_dangerous_wildlife"
 				has_planet_modifier = "pm_titanic_life"
@@ -65,6 +66,7 @@ pm_weak_magnetic_field = {
 			factor = 0
 			OR = {
 				is_planet_class = "pc_gaia" # Gaia Worlds are Paradise Planets, hence there should be no negative modifiers.
+				is_pd_gaia = yes
 				is_planet_class = "pc_city"
 				has_planet_modifier = "pm_weak_magnetic_field"
 				has_planet_modifier = "pm_strong_magnetic_field"
@@ -90,6 +92,7 @@ pm_strong_magnetic_field = {
 			factor = 0
 			OR = {
 				is_planet_class = "pc_gaia" # Gaia Worlds are Paradise Planets, hence there should be no negative modifiers.
+				is_pd_gaia = yes
 				is_planet_class = "pc_city"
 				has_planet_modifier = "pm_strong_magnetic_field"
 				has_planet_modifier = "pm_weak_magnetic_field"
@@ -111,6 +114,7 @@ pm_unstable_tectonics = {
 				is_planet_class = "pc_relic"
 				is_planet_class = "pc_city"
 			}
+			is_pd_gaia = no
 		}
 		modifier = {
 			add = 1
@@ -140,6 +144,7 @@ pm_tidal_locked = {
 			factor = 0
 			OR = {
 				is_planet_class = "pc_gaia" # Gaia Worlds are Paradise Planets, hence there should be no negative modifiers.
+				is_pd_gaia = yes
 				is_planet_class = "pc_city"
 				has_planet_modifier = "pm_tidal_locked"
 			}
@@ -184,6 +189,7 @@ pm_asteroid_impacts = {
 				is_planet_class = "pc_relic"
 				is_planet_class = "pc_city"
 			}
+			is_pd_gaia = no
 		}
 		modifier = {
 			add = 1
@@ -193,6 +199,7 @@ pm_asteroid_impacts = {
 			factor = 0
 			OR = {
 				is_planet_class = "pc_gaia" # Gaia Worlds are Paradise Planets, hence there should be no negative modifiers.
+				is_pd_gaia = yes
 				is_planet_class = "pc_city"
 				has_planet_modifier = "pm_asteroid_impacts"
 			}
@@ -267,6 +274,7 @@ pm_wild_storms = {
 			factor = 0
 			OR = {
 				is_planet_class = "pc_gaia" # Gaia Worlds are Paradise Planets, hence there should be no negative modifiers.
+				is_pd_gaia = yes
 				is_planet_class = "pc_city"
 				has_planet_modifier = "pm_wild_storms"
 			}
@@ -307,6 +315,7 @@ pm_low_gravity = {
 			factor = 0
 			OR = {
 				is_planet_class = "pc_gaia" # Gaia Worlds are Paradise Planets, hence there should be no negative modifiers.
+				is_pd_gaia = yes
 				is_planet_class = "pc_city"
 				has_planet_modifier = "pm_high_gravity"
 				has_planet_modifier = "pm_low_gravity"
@@ -348,6 +357,7 @@ pm_high_gravity = {
 			factor = 0
 			OR = {
 				is_planet_class = "pc_gaia" # Gaia Worlds are Paradise Planets, hence there should be no negative modifiers.
+				is_pd_gaia = yes
 				is_planet_class = "pc_city"
 				has_planet_modifier = "pm_low_gravity"
 				has_planet_modifier = "pm_high_gravity"
@@ -380,7 +390,6 @@ pm_mineral_rich = {
 		modifier = {
 			factor = 0
 			OR = {
-				is_planet_class = "pc_relic"
 				is_planet_class = "pc_city"
 				has_planet_modifier = "pm_mineral_poor"
 				has_planet_modifier = "pm_mineral_rich"
@@ -435,6 +444,7 @@ pm_mineral_poor = {
 			factor = 0
 			OR = {
 				is_planet_class = "pc_gaia" # Gaia Worlds are Paradise Planets, hence there should be no negative modifiers.
+				is_pd_gaia = yes
 				is_planet_class = "pc_city"
 				has_planet_modifier = "pm_mineral_poor"
 				has_planet_modifier = "pm_mineral_rich"
@@ -517,7 +527,10 @@ pm_natural_beauty = {
 		}
 		modifier = {
 			add = 20 # above modifier+trigger already gives +10 for gaia
-			is_planet_class = "pc_gaia"
+			OR = {
+				is_planet_class = "pc_gaia"
+				is_pd_gaia = yes
+			}
 		}
 		modifier = {
 			factor = 0
@@ -580,7 +593,11 @@ pm_lush = {
 		}
 		modifier = {
 			add = 30
-			is_planet_class = "pc_gaia"
+			OR = {
+				is_planet_class = "pc_gaia"
+				is_pd_gaia = yes
+
+			}
 		}
 		modifier = {
 			factor = 2
@@ -588,6 +605,7 @@ pm_lush = {
 			OR = {
 				is_wet = yes
 				is_planet_class = "pc_gaia"
+				is_pd_gaia = yes
 			}
 		}
 		modifier = {
@@ -613,6 +631,7 @@ pm_bleak = {
 			factor = 0
 			OR = {
 				is_planet_class = "pc_gaia"
+				is_pd_gaia = yes
 				is_planet_class = "pc_tropical"
 				is_planet_class = "pc_city"
 				has_planet_modifier = "pm_bleak"
@@ -623,3 +642,5 @@ pm_bleak = {
 
 	modifier = "bleak_planet"
 }
+
+# note: does not account for pm_docile_wildlife or pm_burrowing_wildlife from Planetary Diversity 
