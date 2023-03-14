@@ -49,7 +49,7 @@ And these twenty-three `planet_modifiers` are overridden:
 
 This mod also overrides a game setup event `game_setup.2`. I find it unlikely other mods would be changing this event (it clears planetary modifiers for home systems); in any case first in wins for events.
 
-Built for Stellaris version 3.6 "Orion."  Not compatible with achievements.  Largely compatible with Guilli's Planet Modifiers and Features - Guilli's static modifier changes will take precedence but there are no error-causing conflicts.  Also has built-in compatibility with Planetary Diversity.
+Built for Stellaris version 3.7 "Canis Minor."  Not compatible with achievements.  Largely compatible with Guilli's Planet Modifiers and Features - Guilli's static modifier changes will take precedence but there are no error-causing conflicts.  Also has built-in compatibility with Planetary Diversity.
 
 ### When to Install
 
@@ -112,6 +112,7 @@ Overriding static modifiers and preempting events cause the game to log errors, 
 * 4.0.0 Update for Stellaris version 3.6 "Orion" (and changes from version 3.5 "Fornax") - integrate `game_start.2` changes
 * 5.0.0 Add a compatibility trigger for other mods to check whether this one is active, remove old compatibility global flag
 * 5.1.0 Add built-in support for [Planetary Diversity](https://steamcommunity.com/sharedfiles/filedetails/?id=819148835)
+* 6.0.0 Update for Stellaris version 3.7 "Canis Minor" - integrate `game_start.2` changes
 
 ## Source Code
 
