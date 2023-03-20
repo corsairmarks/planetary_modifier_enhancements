@@ -13,6 +13,7 @@ pm_hazardous_weather = {
 				is_planet_class = "pc_gaia" # Gaia Worlds are Paradise Planets, hence no Hazardous Weather conditions.
 				is_pd_gaia = yes
 				is_planet_class = "pc_city"
+				is_pd_arcology = yes
 				has_planet_modifier = "pm_hazardous_weather"
 			}
 		}
@@ -42,6 +43,7 @@ pm_dangerous_wildlife = {
 				is_planet_class = "pc_gaia"
 				is_pd_gaia = yes
 				is_planet_class = "pc_city"
+				is_pd_arcology = yes
 				has_planet_modifier = "pm_dangerous_wildlife"
 				has_planet_modifier = "pm_titanic_life"
 			}
@@ -68,6 +70,7 @@ pm_weak_magnetic_field = {
 				is_planet_class = "pc_gaia" # Gaia Worlds are Paradise Planets, hence there should be no negative modifiers.
 				is_pd_gaia = yes
 				is_planet_class = "pc_city"
+				is_pd_arcology = yes
 				has_planet_modifier = "pm_weak_magnetic_field"
 				has_planet_modifier = "pm_strong_magnetic_field"
 			}
@@ -94,6 +97,7 @@ pm_strong_magnetic_field = {
 				is_planet_class = "pc_gaia" # Gaia Worlds are Paradise Planets, hence there should be no negative modifiers.
 				is_pd_gaia = yes
 				is_planet_class = "pc_city"
+				is_pd_arcology = yes
 				has_planet_modifier = "pm_strong_magnetic_field"
 				has_planet_modifier = "pm_weak_magnetic_field"
 			}
@@ -115,6 +119,7 @@ pm_unstable_tectonics = {
 				is_planet_class = "pc_city"
 			}
 			is_pd_gaia = no
+			is_pd_arcology = no
 		}
 		modifier = {
 			add = 1
@@ -146,7 +151,9 @@ pm_tidal_locked = {
 				is_planet_class = "pc_gaia" # Gaia Worlds are Paradise Planets, hence there should be no negative modifiers.
 				is_pd_gaia = yes
 				is_planet_class = "pc_city"
+				is_pd_arcology = yes
 				has_planet_modifier = "pm_tidal_locked"
+				is_pd_tidally_locked = yes
 			}
 		}
 		modifier = {
@@ -190,6 +197,7 @@ pm_asteroid_impacts = {
 				is_planet_class = "pc_city"
 			}
 			is_pd_gaia = no
+			is_pd_arcology = no
 		}
 		modifier = {
 			add = 1
@@ -201,6 +209,7 @@ pm_asteroid_impacts = {
 				is_planet_class = "pc_gaia" # Gaia Worlds are Paradise Planets, hence there should be no negative modifiers.
 				is_pd_gaia = yes
 				is_planet_class = "pc_city"
+				is_pd_arcology = yes
 				has_planet_modifier = "pm_asteroid_impacts"
 			}
 		}
@@ -276,6 +285,7 @@ pm_wild_storms = {
 				is_planet_class = "pc_gaia" # Gaia Worlds are Paradise Planets, hence there should be no negative modifiers.
 				is_pd_gaia = yes
 				is_planet_class = "pc_city"
+				is_pd_arcology = yes
 				has_planet_modifier = "pm_wild_storms"
 			}
 		}
@@ -317,6 +327,7 @@ pm_low_gravity = {
 				is_planet_class = "pc_gaia" # Gaia Worlds are Paradise Planets, hence there should be no negative modifiers.
 				is_pd_gaia = yes
 				is_planet_class = "pc_city"
+				is_pd_arcology = yes
 				has_planet_modifier = "pm_high_gravity"
 				has_planet_modifier = "pm_low_gravity"
 			}
@@ -359,6 +370,7 @@ pm_high_gravity = {
 				is_planet_class = "pc_gaia" # Gaia Worlds are Paradise Planets, hence there should be no negative modifiers.
 				is_pd_gaia = yes
 				is_planet_class = "pc_city"
+				is_pd_arcology = yes
 				has_planet_modifier = "pm_low_gravity"
 				has_planet_modifier = "pm_high_gravity"
 			}
@@ -381,7 +393,10 @@ pm_mineral_rich = {
 		}
 		modifier = {
 			add = 1
-			is_planet_class = "pc_nuked"
+			OR = {
+				is_planet_class = "pc_nuked"
+				is_pd_nuked = yes
+			}
 		}
 		modifier = {
 			factor = 4
@@ -391,6 +406,7 @@ pm_mineral_rich = {
 			factor = 0
 			OR = {
 				is_planet_class = "pc_city"
+				is_pd_arcology = yes
 				has_planet_modifier = "pm_mineral_poor"
 				has_planet_modifier = "pm_mineral_rich"
 				has_planet_modifier = "pm_ultra_rich"
@@ -416,6 +432,7 @@ pm_ultra_rich = {
 			factor = 0
 			OR = {
 				is_planet_class = "pc_city"
+				is_pd_arcology = yes
 				has_planet_modifier = "pm_mineral_poor"
 				has_planet_modifier = "pm_mineral_rich"
 				has_planet_modifier = "pm_ultra_rich"
@@ -446,6 +463,7 @@ pm_mineral_poor = {
 				is_planet_class = "pc_gaia" # Gaia Worlds are Paradise Planets, hence there should be no negative modifiers.
 				is_pd_gaia = yes
 				is_planet_class = "pc_city"
+				is_pd_arcology = yes
 				has_planet_modifier = "pm_mineral_poor"
 				has_planet_modifier = "pm_mineral_rich"
 				has_planet_modifier = "pm_ultra_rich"
@@ -481,6 +499,7 @@ pm_titanic_life = {
 			factor = 0
 			OR = {
 				is_planet_class = "pc_city"
+				is_pd_arcology = yes
 				has_planet_modifier = "pm_titanic_life"
 				has_planet_modifier = "pm_dangerous_wildlife"
 			}
@@ -508,6 +527,7 @@ pm_asteroid_belt = {
 			factor = 0
 			OR = {
 				is_planet_class = "pc_city"
+				is_pd_arcology = yes
 				has_planet_modifier = "pm_asteroid_belt"
 				has_moon = yes
 				is_moon = yes
@@ -536,6 +556,7 @@ pm_natural_beauty = {
 			factor = 0
 			OR = {
 				is_planet_class = "pc_city"
+				is_pd_arcology = yes
 				has_planet_modifier = "pm_natural_beauty"
 			}
 		}
@@ -556,6 +577,7 @@ pm_atmospheric_aphrodisiac = {
 			OR = {
 				is_planet_class = "pc_relic"
 				is_planet_class = "pc_city"
+				is_pd_arcology = yes
 				has_planet_modifier = "pm_atmospheric_aphrodisiac"
 			}
 		}
@@ -576,6 +598,7 @@ pm_atmospheric_hallucinogen = {
 			OR = {
 				is_planet_class = "pc_relic"
 				is_planet_class = "pc_city"
+				is_pd_arcology = yes
 				has_planet_modifier = "pm_atmospheric_hallucinogen"
 			}
 		}
@@ -633,7 +656,9 @@ pm_bleak = {
 				is_planet_class = "pc_gaia"
 				is_pd_gaia = yes
 				is_planet_class = "pc_tropical"
+				is_pd_tropical = yes
 				is_planet_class = "pc_city"
+				is_pd_arcology = yes
 				has_planet_modifier = "pm_bleak"
 				has_planet_modifier = "pm_lush"
 			}
