@@ -203,7 +203,12 @@ event = {
 			}
 		}
 		every_galaxy_planet = {
-			limit = { is_planet_class = pc_nuked }
+			limit = {
+				OR = {
+					is_planet_class = pc_nuked
+					is_pd_nuked = yes
+				}
+			}
 			set_planet_flag = ancient_history_planet
 		}
 		every_system = {
