@@ -19,7 +19,10 @@ find_and_apply_extensive_moon_system_child_modifier = {
 apply_extensive_moon_system_child_modifier_planet = {
 	optimize_memory
 	every_moon = {
-		limit = { has_extensive_moon_system_modifier = no }
+		limit = {
+			has_extensive_moon_system_modifier = no
+			is_artificial = no
+		}
 		add_modifier = { modifier = extensive_moon_system_moon }
 		planet_event = {
 			id = planetary_modifier_enhancements.2
