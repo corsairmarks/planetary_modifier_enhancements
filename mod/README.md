@@ -114,6 +114,7 @@ Overriding static modifiers and preempting events cause the game to log errors, 
 * 5.1.0 Add built-in support for [Planetary Diversity](https://steamcommunity.com/sharedfiles/filedetails/?id=819148835)
 * 6.0.0 Update for Stellaris version 3.7 "Canis Minor" - integrate `game_start.2` changes
 * 6.1.0 Improve built-in support for [Planetary Diversity](https://steamcommunity.com/sharedfiles/filedetails/?id=819148835)
+* 6.1.1 Do not add `extensive_moon_system_moon` to artificial planets
 
 ## Source Code
 
