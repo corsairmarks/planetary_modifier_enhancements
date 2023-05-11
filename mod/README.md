@@ -49,7 +49,7 @@ And these twenty-three `planet_modifiers` are overridden:
 
 This mod also overrides a game setup event `game_setup.2`. I find it unlikely other mods would be changing this event (it clears planetary modifiers for home systems); in any case first in wins for events.
 
-Built for Stellaris version 3.7 "Canis Minor."  Not compatible with achievements.  Largely compatible with Guilli's Planet Modifiers and Features - Guilli's static modifier changes will take precedence but there are no error-causing conflicts.  Also has built-in compatibility with Planetary Diversity.
+Built for Stellaris version 3.8 "Gemini."  Not compatible with achievements.  Largely compatible with Guilli's Planet Modifiers and Features - Guilli's static modifier changes will take precedence but there are no error-causing conflicts.  Also has built-in compatibility with Planetary Diversity.
 
 ### When to Install
 
@@ -97,14 +97,14 @@ Overriding static modifiers and preempting events cause the game to log errors, 
 * 2.2.0 Add event to set flag to mark as installed
 * 2.2.1 Remove extra images files to keep distribution lightweight (no script changes)
 * 2.3.0 Remove monthly pulse event, instead fire when a single-player game is loaded
-* 2.4.0 Marked compatible with Stellaris version 3.1 "Lem" - no script changes
+* 2.4.0 Marked as compatible with Stellaris version 3.1 "Lem" - no script changes
 * 2.5.0 Allow multiple modifiers to spawn per planet, adjust mineral-based static modifiers to affect miner-category output and also mining stations
     * Overwrite most built-in planetary modifiers to allow multiple modifiers to spawn on a single planet (many modifiers were already coded to have increased or decreased spawn chances in the presence of other modifiers - so disabling them for planets with >1 modifier made no sense)
     * Overwrite many static modifiers related to planetary modifiers that affect planetary natural resources - instead of minerals-only output, these modifiers affect all "planet_miners" category jobs _and_ affect gatherer stations (aka mining stations) in orbit of the planet - e.g. Carbon World can only spawn on barren planets (which are unhabitable)
     * Moons of moons in Extensive Moon Systems now also have the Extensive Moon System Moon planetary modifier added
     * At game start, ensure unhabitable planets with a plentiful minerals modifier(s) have a minerals deposit if they doesn't already have an orbital deposit
-* 2.6.0 Marked compatible with Stellaris version 3.2 "Herbert" - no script changes
-* 2.7.0 Marked compatible with Stellaris version 3.3 "Libra" - no script changes
+* 2.6.0 Marked as compatible with Stellaris version 3.2 "Herbert" - no script changes
+* 2.7.0 Marked as compatible with Stellaris version 3.3 "Libra" - no script changes
 * 3.0.0 Update for Stellaris version 3.4 "Cepheus"
     * Integrate minor enhancement to the Carbon World spawn chances
     * Use memory optimization feature for effects and triggers
@@ -115,6 +115,7 @@ Overriding static modifiers and preempting events cause the game to log errors, 
 * 6.0.0 Update for Stellaris version 3.7 "Canis Minor" - integrate `game_start.2` changes
 * 6.1.0 Improve built-in support for [Planetary Diversity](https://steamcommunity.com/sharedfiles/filedetails/?id=819148835)
 * 6.1.1 Do not add `extensive_moon_system_moon` to artificial planets
+* 6.2.0 Marked as compatible with Stellaris version 3.8 "Gemini" - no script changes
 
 ## Source Code
 

@@ -12,7 +12,7 @@ This mod should be fairly compatible with other mods. Incompatibilities would li
 
 This mod also overrides a game setup event [b]game_setup.2[/b]. I find it unlikely other mods would be changing this event (it clears planetary modifiers for home systems); in any case first in wins for events.
 
-Built for Stellaris version 3.7 "Canis Minor." Not compatible with achievements. Largely compatible with Guilli's Planet Modifiers and Features - Guilli's static modifier changes will take precedence but there are no error-causing conflicts. Also has built-in compatibility with Planetary Diversity.
+Built for Stellaris version 3.8 "Gemini." Not compatible with achievements. Largely compatible with Guilli's Planet Modifiers and Features - Guilli's static modifier changes will take precedence but there are no error-causing conflicts. Also has built-in compatibility with Planetary Diversity.
 
 [h3]When to Install[/h3]
 This mod can be safely added to your save after the game has started, but not removed. If this mod is not active at game start, you will miss out of the Extensive Moon System (Moon) modifier being applied to the moons of gas giants with Extensive Moon System and minerals being added to some planets with modifiers but no deposits. Removing this mod will result in unknown planetary modifiers - which Stellaris may or may not handle gracefully.
