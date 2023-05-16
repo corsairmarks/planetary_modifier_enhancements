@@ -217,13 +217,13 @@ event = {
 				limit = {
 					colonizable_planet = yes
 					has_owner = no
-					AND = {
-						if = {
-							limit = { exists = event_target:sol_system_earth }
-							NOT = { is_same_value = event_target:sol_system_earth }
-						}
-						NOT = { has_planet_flag = prescripted_ideal }
-						NOT = { has_planet_flag = ratling_planet }
+					if = {
+						limit = { exists = event_target:sol_system_earth }
+						NOT = { is_same_value = event_target:sol_system_earth }
+					}
+					NOR = {
+						has_planet_flag = prescripted_ideal
+						has_planet_flag = ratling_planet
 					}
 				}
 				save_event_target_as = pre_sapient_planet
